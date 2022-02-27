@@ -1,0 +1,151 @@
+/******************************************************************************
+* File Name: ece453_led_task.c
+*
+* Description: This file contains the task that that controls the status LEDs.
+*
+* Related Document: See README.md
+*
+*******************************************************************************
+* (c) 2019-2020, Cypress Semiconductor Corporation. All rights reserved.
+*******************************************************************************
+* This software, including source code, documentation and related materials
+* ("Software"), is owned by Cypress Semiconductor Corporation or one of its
+* subsidiaries ("Cypress") and is protected by and subject to worldwide patent
+* protection (United States and foreign), United States copyright laws and
+* international treaty provisions. Therefore, you may use this Software only
+* as provided in the license agreement accompanying the software package from
+* which you obtained this Software ("EULA").
+*
+* If no EULA applies, Cypress hereby grants you a personal, non-exclusive,
+* non-transferable license to copy, modify, and compile the Software source
+* code solely for use in connection with Cypress's integrated circuit products.
+* Any reproduction, modification, translation, compilation, or representation
+* of this Software except as specified above is prohibited without the express
+* written permission of Cypress.
+*
+* Disclaimer: THIS SOFTWARE IS PROVIDED AS-IS, WITH NO WARRANTY OF ANY KIND,
+* EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, NONINFRINGEMENT, IMPLIED
+* WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. Cypress
+* reserves the right to make changes to the Software without notice. Cypress
+* does not assume any liability arising out of the application or use of the
+* Software or any product or circuit described in the Software. Cypress does
+* not authorize its products for use in any products where a malfunction or
+* failure of the Cypress product may reasonably be expected to result in
+* significant property damage, injury or death ("High Risk Product"). By
+* including Cypress's product in a High Risk Product, the manufacturer of such
+* system or application assumes all risk of such use and in doing so agrees to
+* indemnify Cypress against all liability.
+*******************************************************************************/
+
+
+/*******************************************************************************
+ * Header file includes
+ ******************************************************************************/
+#include "ece453_led_task.h"
+
+
+/*******************************************************************************
+ * Macros
+ ******************************************************************************/
+
+/* Queue handle used for commands to Task_StatusLed */
+QueueHandle_t ece453_led_data_q;
+
+
+/*******************************************************************************
+ * Function prototype
+ ******************************************************************************/
+
+/*******************************************************************************
+* Function Name: vtask_ece453_led
+********************************************************************************
+* Summary:
+*  Task that controls the status LED.
+*
+* Parameters:
+*  void *param : Task parameter defined during task creation (unused)
+*
+*******************************************************************************/
+void task_ece453_led(void *param)
+{
+
+    cy_rslt_t rslt;
+
+
+    /* Variable that stores the data received over queue */
+	ece453_led_data_t ece453_led_data;
+
+    /* Variable used to store the return values of RTOS APIs */
+    BaseType_t rtos_api_result;
+
+    /* Remove warning for unused parameter */
+    (void)param ;
+
+    /* ADD CODE
+     * Initialize PWM on the supplied pin and assign a new clock
+     * for the RED LED.  The PIN should have a period of 1KHz and
+     * be set to an initial state where the LED is turned off */
+
+	cyhal_pwm_t pwm_obj_red;
+	/* Initialize PWM on the supplied pin and assign a new clock */
+	rslt = cyhal_pwm_init(&pwm_obj_red, PIN_LED_RED, NULL);
+	/* Set a duty cycle of 50% and frequency of 1Hz */
+	rslt = cyhal_pwm_set_duty_cycle(&pwm_obj_red, 100, 1000);
+	/* Start the PWM output */
+	rslt = cyhal_pwm_start(&pwm_obj_red);
+
+    /* ADD CODE
+     * Initialize PWM on the supplied pin and assign a new clock
+     * for the GREEN LED.  The PIN should have a period of 1KHz and
+     * be set to an initial state where the LED is turned off */
+
+	cyhal_pwm_t pwm_obj_green;
+	/* Initialize PWM on the supplied pin and assign a new clock */
+	rslt = cyhal_pwm_init(&pwm_obj_green, PIN_LED_GREEN, NULL);
+	/* Set a duty cycle of 50% and frequency of 1Hz */
+	rslt = cyhal_pwm_set_duty_cycle(&pwm_obj_green, 100, 1000);
+	/* Start the PWM output */
+	rslt = cyhal_pwm_start(&pwm_obj_green);
+
+	ece453_led_data_t buffer;
+
+
+    /* Repeatedly running part of the task */
+    for(;;)
+    {
+        /* ADD CODE BELOW based on the comments provided */
+        
+        /* Block until a command has been received from the BLE task.
+         * The data sent should be recieved on the FreeRTOS queue that
+         * is defined in ece453_led_task.h.  Be sure to examine the 
+         * ece453_led_data_t struct when determining what data will be
+         * received from the BLE task.
+
+        /* Modify the RED or GREEN LEDs duty cycle based on the information
+         * that was received from the BLE Task. Remember, that LED is active-low.
+         * If you recieve a PWM value of 45 (45%), the time the PIN conrolling the
+         * LED should be set to 1 is 55 (100 - Desired PWM Value)
+         *
+         * Make use of the HAL documentation to determine how to configure the pins
+         * used to control the RED and GREEN LEDs as PWM pins */
+
+    	xQueueReceive(ece453_led_data_q, &buffer, portMAX_DELAY);
+
+    	if(buffer.ece_led == ECE453_LED_RED)
+    	{
+    		rslt = cyhal_pwm_set_duty_cycle(&pwm_obj_red,100-buffer.pwm, 1000);
+
+
+    	} else if( buffer.ece_led == ECE453_LED_GREEN)
+    	{
+    		rslt = cyhal_pwm_set_duty_cycle(&pwm_obj_green, 100-buffer.pwm, 1000);
+    	}
+
+        
+    }
+}
+
+
+
+/* [] END OF FILE */
+

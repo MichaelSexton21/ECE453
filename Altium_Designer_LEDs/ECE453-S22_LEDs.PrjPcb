@@ -49,6 +49,23 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
+DocumentPath=..\..\Downloads\ul_ASMT-YTB7-0AA02\AltiumDesigner\2022-03-25_17-10-17\ASMT-YTB7-0AA02.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=PECAFFVN
+
+[Document2]
 DocumentPath=..\..\Documents\AltiumLL\0_33_cap.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -65,7 +82,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=OMBKMLJD
 
-[Document2]
+[Document3]
 DocumentPath=..\..\Documents\AltiumLL\VoltageRegulator5V.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -82,7 +99,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=AXQTDWAR
 
-[Document3]
+[Document4]
 DocumentPath=..\..\Documents\AltiumLL\0ohmRes.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -99,7 +116,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YWRRCXAX
 
-[Document4]
+[Document5]
 DocumentPath=..\..\Documents\AltiumLL\100ufElectrolyticCap.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -116,7 +133,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=BVYCTGOV
 
-[Document5]
+[Document6]
 DocumentPath=..\..\Documents\AltiumLL\nmos.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -133,7 +150,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YMTPJHVG
 
-[Document6]
+[Document7]
 DocumentPath=..\..\Documents\AltiumLL\1KohmRes.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -150,7 +167,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UQNLPPBE
 
-[Document7]
+[Document8]
 DocumentPath=..\..\Documents\AltiumLL\51ohmRes.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -167,7 +184,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TDYYTNYD
 
-[Document8]
+[Document9]
 DocumentPath=..\..\Documents\AltiumLL\Switch.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -184,7 +201,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=PIWYURXG
 
-[Document9]
+[Document10]
 DocumentPath=..\..\Documents\AltiumLL\VoltageRegulator3_3V.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -201,7 +218,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MPRJBCLL
 
-[Document10]
+[Document11]
 DocumentPath=Sources\ece315.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -218,7 +235,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=OFIFFPAK
 
-[Document11]
+[Document12]
 DocumentPath=..\..\Downloads\RJHSE-5080\AMPHENOL_RJHSE-5080.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -235,7 +252,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HTKXBAIJ
 
-[Document12]
+[Document13]
 DocumentPath=Sources\SOP65P640X120-20N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -252,7 +269,24 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=ERXLASEP
 
-[Document13]
+[Document14]
+DocumentPath=..\..\Downloads\ul_ASMT-YTB7-0AA02\AltiumDesigner\2022-03-25_17-10-17\ASMT-YTB7-0AA02.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=ZSPMIMOV
+
+[Document15]
 DocumentPath=Sources\LEDSC160X320X90-2N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -269,7 +303,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=FWJJUTCM
 
-[Document14]
+[Document16]
 DocumentPath=..\..\Downloads\282837-2\TE_282837-2.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -286,7 +320,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GOSOACCN
 
-[Document15]
+[Document17]
 DocumentPath=01-Revision_History_and_Contents.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=100
@@ -303,79 +337,28 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UUCNXNPW
 
-[Document16]
-DocumentPath=02-Power.SchDoc
+[Document18]
+DocumentPath=02_Input.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=200
 AnnotationIndexControlEnabled=1
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=1
+AnnotateOrder=6
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=0
+ClassGenCCAutoEnabled=1
 ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=UXHFIGHL
+DocumentUniqueId=YMEQGTRT
 
-[Document17]
-DocumentPath=03_MCU.SchDoc
+[Document19]
+DocumentPath=03_LEDs_0_4.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=300
 AnnotationIndexControlEnabled=1
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=2
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=0
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=NHMSNNGW
-
-[Document18]
-DocumentPath=04_Motor.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=3
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=WMUKFGQA
-
-[Document19]
-DocumentPath=05_Buzzer.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=4
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=OKCZUNHO
-
-[Document20]
-DocumentPath=06_LEDs.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
 AnnotateOrder=5
@@ -388,8 +371,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NIKLWKZP
 
-[Document21]
-DocumentPath=ECE453_Interface.PcbDoc
+[Document20]
+DocumentPath=ECE453_Interface_LEDs.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -405,7 +388,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RQYQPPRE
 
-[Document22]
+[Document21]
 DocumentPath=ECE453.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -422,7 +405,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document23]
+[Document22]
 DocumentPath=ECE453-S22.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -439,7 +422,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document24]
+[Document23]
 DocumentPath=..\..\Documents\AltiumLL\VoltageRegulator5V.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -456,7 +439,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=FWYEZZFQ
 
-[Document25]
+[Document24]
 DocumentPath=..\..\Documents\AltiumLL\0ohmRes.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -473,7 +456,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YMAFSHDB
 
-[Document26]
+[Document25]
 DocumentPath=..\..\Documents\AltiumLL\100ufElectrolyticCap.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -490,7 +473,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MZCOGRGJ
 
-[Document27]
+[Document26]
 DocumentPath=..\..\Documents\AltiumLL\nmos.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -507,7 +490,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QDBFDMJO
 
-[Document28]
+[Document27]
 DocumentPath=..\..\Documents\AltiumLL\1KohmRes.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -524,7 +507,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YUBPDSKT
 
-[Document29]
+[Document28]
 DocumentPath=..\..\Documents\AltiumLL\0_1ufCap.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -541,7 +524,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KPAHIHPK
 
-[Document30]
+[Document29]
 DocumentPath=..\..\Documents\AltiumLL\3PinConnector.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -558,7 +541,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=AEPAMSGO
 
-[Document31]
+[Document30]
 DocumentPath=..\..\Documents\AltiumLL\0_33cap.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -575,7 +558,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=CZSVHQHQ
 
-[Document32]
+[Document31]
 DocumentPath=..\..\Documents\AltiumLL\51ohmRes.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -592,7 +575,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=SIVVCFUL
 
-[Document33]
+[Document32]
 DocumentPath=..\..\Documents\AltiumLL\0_1ufCap.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -609,7 +592,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TIOTMGZL
 
-[Document34]
+[Document33]
 DocumentPath=..\..\Documents\AltiumLL\Switch.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -626,7 +609,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=IOKHNUHC
 
-[Document35]
+[Document34]
 DocumentPath=..\..\Documents\AltiumLL\VoltageRegulator3_3V.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -643,7 +626,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NGLTGAHM
 
-[Document36]
+[Document35]
 DocumentPath=..\..\Documents\AltiumLL\3PinConnector.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -660,7 +643,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=VPTGIBLT
 
-[Document37]
+[Document36]
 DocumentPath=Sources\ece315.SCHLIB
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -677,7 +660,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=PCQPNGDI
 
-[Document38]
+[Document37]
 DocumentPath=..\..\Downloads\RJHSE-5080\RJHSE-5080.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -694,7 +677,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=ZXDHJLIK
 
-[Document39]
+[Document38]
 DocumentPath=..\..\Downloads\598-8220-107F\LEDSC160X32X90-2N.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -711,7 +694,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JVHTISAB
 
-[Document40]
+[Document39]
 DocumentPath=..\..\..\Public\Documents\Altium\SOP65P640X120-20N.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -728,7 +711,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=WKAMWODT
 
-[Document41]
+[Document40]
 DocumentPath=..\..\Downloads\282837-2\282837-2.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -744,6 +727,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=XBIKDCMC
+
+[Document41]
+DocumentPath=..\..\Downloads\ul_ASMT-YTB7-0AA02\AltiumDesigner\2022-03-25_17-10-17\04_LEDs_5_9.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=400
+AnnotationIndexControlEnabled=1
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=7
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=KARJVIEJ
 
 [SearchPath1]
 Path=..\Altium Base Structure\Libraries\*.*

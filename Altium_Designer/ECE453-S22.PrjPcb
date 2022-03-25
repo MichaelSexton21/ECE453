@@ -357,8 +357,8 @@ DocumentUniqueId=NHMSNNGW
 [Document19]
 DocumentPath=04_Motor.SchDoc
 AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
+AnnotateStartValue=400
+AnnotationIndexControlEnabled=1
 AnnotateSuffix=
 AnnotateScope=All
 AnnotateOrder=3
@@ -374,8 +374,8 @@ DocumentUniqueId=WMUKFGQA
 [Document20]
 DocumentPath=05_Buzzer.SchDoc
 AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
+AnnotateStartValue=500
+AnnotationIndexControlEnabled=1
 AnnotateSuffix=
 AnnotateScope=All
 AnnotateOrder=4
@@ -391,8 +391,8 @@ DocumentUniqueId=OKCZUNHO
 [Document21]
 DocumentPath=06_LEDs.SchDoc
 AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
+AnnotateStartValue=600
+AnnotationIndexControlEnabled=1
 AnnotateSuffix=
 AnnotateScope=All
 AnnotateOrder=5

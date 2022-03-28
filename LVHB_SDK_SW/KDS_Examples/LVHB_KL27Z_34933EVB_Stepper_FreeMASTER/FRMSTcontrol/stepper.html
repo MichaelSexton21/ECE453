@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Stepper Motor Control</title>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1250">
+  
+    <link href="jquery-ui-1.11.4.custom/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="jquery-ui-1.11.4.custom/external/jquery/jquery.js"></script>
+    <script type="text/javascript" src="jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+    <script type="text/javascript" src="stepper.js"></script>
+	</head>
+  <body onload="PageInit()" class="background-color"> 
+    <!-- create FreeMASTER ActiveX object "fmstr" -->
+    <object id="fmstr" height="0" width="0" classid="clsid:48A185F1-FFDB-11D3-80E3-00C04F176153">
+    </object>                    
+    
+    <div id="main" class="border set-padding">
+      <img src="images/NXP_logo.png" alt="NXP" border="0" height="61" width="170" style="float:right;">
+        
+      <h1>Stepper Motor Control</h1>
+        
+      <div id="settings">
+        <h2>Motor Control Settings</h2>
+        <div class="box">
+          
+          <div id="controlButtons" class="distribute">
+            <button id="runBtn" title="Run motor" onclick="RunMotor()">Run</button>
+            <button id="stopBtn" title="Stop motor (available only when continual movement used)" onclick="StopMotor()">Stop</button>
+          </div>
+          
+          <form>
+            <div id="controlMode" style="text-align: center;">
+              <p style="margin-top: 1em;">Control Mode:</p>
+              <input type="radio" id="fullStep" name="controlMode" value="FULL_STEP" checked="checked"><label for="fullStep">Full-step</label>
+              <input type="radio" id="microStep" name="controlMode" value="MICRO_STEP"><label for="microStep">Micro-step</label>
+            </div>
+          </form>
+          
+          <div id="fullSettings">
+            <div class="foldCaption">
+              Full-step parameters
+            </div>
+            <div class="foldBody">
+              <form>
+                <table>
+                  <tr>
+                    <td><label for="fullDirection">Direction:</label></td>
+                    <td>
+                      <select name="fullDirection" id="fullDirection">
+                        <option value="1" selected="selected">Forward</option>
+                        <option value="0">Reverse</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="fullContinual">Continual movement:</label></td>
+                    <td><input type="checkbox" id="fullContinual"></td>
+                  </tr>
+                  <tr>
+                    <td><label for="fullSteps">Number of Steps:</label></td>
+                    <td><input type="number" id="fullSteps" value="1" min="1" max="1000000" step="1" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" style="text-align: center">
+                      Speed       
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <div id="fullSlider" class="sliderSpeed"></div>      
+                      <p id="fullSpeedLabel" style="text-align: center"></p>      
+                    </td>
+                  </tr>
+                </table>
+              </form>
+            </div>        
+          </div>  <!-- fullSettings -->
+        
+          <div id="microSettings" style="display: none;">
+            <div class="foldCaption">
+              Micro-step parameters
+            </div>
+            <div class="foldBody">
+              <form>
+                <table>
+                  <tr>
+                    <td><label for="microSize">Micro-steps per Step:</label></td>
+                    <td>
+                      <select name="microSize" id="microSize">
+                        <option value="2" selected="selected">2</option>
+                        <option value="4">4</option>
+                        <option value="8">8</option>
+                        <option value="16">16</option>
+                        <option value="32">32</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="microDirection">Direction:</label></td>
+                    <td>
+                      <select name="microDirection" id="microDirection">
+                        <option value="1" selected="selected">Forward</option>
+                        <option value="0">Reverse</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="microContinual">Continual movement:</label></td>
+                    <td><input type="checkbox" id="microContinual"></td>
+                  </tr>
+                  <tr>
+                    <td><label for="microSteps">Number of Steps:</label></td>
+                    <td><input type="number" id="microSteps" value="1" min="1" step="1" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" style="text-align: center">
+                      Speed       
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <div id="microSlider" class="sliderSpeed"></div>      
+                      <p id="microSpeedLabel" style="text-align: center"></p>      
+                    </td>
+                  </tr>
+                </table>
+              </form>
+            </div>        
+          </div>  <!-- microSettings -->
+        </div>
+      </div>  <!-- Settings -->
+      
+      <div id="status">
+        <h2>Motor Status</h2>
+        <div class="box">
+          <table>
+            <tr>
+              <td>State:</td>
+              <td id="state"></td>
+            </tr>
+            <tr>
+              <td>Position:</td>
+              <td id="position" class="valueColumn">0</td>
+            </tr>
+          </table> 
+          <br />
+          <button id="resetBtn" title="Reset position counter to zero" onclick="ResetPosition()" class="toCenter">Reset Position</button> 
+        </div>
+
+        <div id="Commands">
+          <h2>Additional Commands</h2>
+          <div class="box">
+            <div id="CommandWrap" class="distribute">
+              <button id="disableBtn" title="Set output of H-Bridge to LOW" onclick="DisableMotor()">Disable Motor</button> 
+              <button id="alignBtn" title="Align rotor to a full-step position" onclick="AlignRotor()">Align Rotor</button> 
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="cleaner"></div>         
+    </div>                
+  </body>
+</html>

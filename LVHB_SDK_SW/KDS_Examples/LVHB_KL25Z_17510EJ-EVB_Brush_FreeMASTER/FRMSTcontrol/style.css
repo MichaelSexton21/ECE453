@@ -1,0 +1,194 @@
+/* CSS Document */
+body {
+  font-family: calibri, arial;  
+  color: #5F5F5F;  
+  font-size: 14pt;
+}
+
+table {
+  position: relative;
+  border-spacing: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  color: #4E4E4E;
+  width: 100%;
+  text-align: left;
+  table-layout: auto;
+}
+
+td {
+  width:150px;
+  text-align: left;
+} 
+
+table td.valueColumn {
+  width: 100%;
+}  
+
+h1 {
+  margin: 0 0 0.2em 0;
+} 
+
+h2 {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+}
+
+button {
+  border: 1px solid #fbd850;
+  border-radius: 5px;
+  margin-bottom: 7px;
+  padding: .4em 1em;
+  color: #eb8f00;
+  background-color: #ffffff;
+  font-size: 15pt;
+  cursor: pointer;
+}
+
+p {
+  margin: 3px; 
+}
+
+select { 
+  padding:3px; 
+  margin: 0; 
+  border-radius:4px; 
+  box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset; 
+  background: #f8f8f8; 
+  color:#484848; 
+  border:none; 
+  outline:none; 
+  display: inline-block;
+  cursor:pointer; 
+  font-size:12px; 
+}
+
+input[type=number] {
+  width: 5.5em;
+}
+
+select {
+  width: 6.5em;
+}
+
+button[disabled] {
+  color: #cccccc;
+  border-color: #cccccc;
+}
+
+.toCenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}      
+
+.bigFont {
+  font-size: 18pt;
+  color: #5F5F5F;
+}
+
+.box {
+  border-radius: 15px;
+  background-color: #fcfad9;
+  border: 1px solid #f2511a;
+  padding: 10px 15px;
+  margin: 0;
+  width: 400px;
+}
+
+.cleaner {
+  clear:both; 
+  height: 0;
+  margin: 0; 
+  padding: 0;
+}
+
+#header {
+  position: relative;
+  height: 70px;
+}
+
+#main {
+  position: relative;
+  width:900px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#motorSettings {
+  float: left;
+}
+
+#deviceSettings {
+  float: right;
+}
+    
+#speedLabel {
+  border: 0; 
+  background-color: transparent;
+}
+
+#CommandWrap {
+  width: 100%;
+}
+
+#logo {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.distribute {
+	text-align: justify;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  height: 40px;
+}
+.distribute > button {
+	display: inline-block;
+	vertical-align: top;
+
+	/* IE fix. */
+	*display: inline;
+	zoom: 1;
+	}
+.distribute:after {
+	content: "";
+	width: 100%;
+	display: inline-block;
+}   
+
+.ui-state-default {
+  color: #cccccc;
+}
+
+.ui-state-active {
+  color: #eb8f00;
+}
+
+.foldBody, .foldCaption {
+  background-color: #f2d1a2;
+  border: 1px solid #f2511a; 
+  padding: 5px 10px;
+}
+
+.foldCaption {
+  display: inline-block;
+  margin-top: 1em;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-width: 0;
+  font-weight: bold;
+  font-size: 0.99em;
+}
+
+.foldBody {
+  width: 95%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+
+

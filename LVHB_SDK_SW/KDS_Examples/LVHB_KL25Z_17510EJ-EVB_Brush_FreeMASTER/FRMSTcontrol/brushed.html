@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <title>DC Brushed Motor Control</title>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1250">
+  
+    <link href="jquery-ui-1.11.4.custom/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="jquery-ui-1.11.4.custom/external/jquery/jquery.js"></script>
+    <script type="text/javascript" src="jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+    <script type="text/javascript" src="brushed.js"></script>
+	</head>
+  <body onload="PageInit()" class="background-color"> 
+    <!-- create FreeMASTER ActiveX object "fmstr" -->
+    <object id="fmstr" height="0" width="0" classid="clsid:48A185F1-FFDB-11D3-80E3-00C04F176153">
+    </object>                    
+    
+    <div id="main" class="border set-padding">
+      <img src="images/NXP_logo.png" alt="NXP" border="0" height="61" width="170" style="float:right;">
+        
+      <h1>DC Brushed Motor Control</h1>
+        
+      <div id="motorSettings">
+        <h2>Motor Control Settings</h2>
+        <div class="box">
+          
+          <div id="controlButtons" class="distribute">
+            <button id="runBtn" title="Run motor" onclick="RunMotor()">Run</button>
+            <button id="brakeBtn" title="Brake motor" onclick="BrakeMotor()">Brake</button>
+            <button id="freewheelBtn" title="The outputs go floating (high impedance) " onclick="FreewheelMotor()">Freewheel</button>
+          </div>
+          
+          <form>
+            <div id="direction" style="text-align: center;">
+              <p style="margin-top: 1em;">Motor Direction:</p>
+              <input type="radio" id="forward" name="direction" onclick="ChangeDirection()" value="1" checked="checked"><label for="forward">Forward</label>
+              <input type="radio" id="reverse" name="direction" onclick="ChangeDirection()" value="0"><label for="reverse">Reverse</label>
+            </div>
+          </form>
+          
+          <p  style="text-align: center; margin-top: 1em;">Motor Speed</p>
+          <div id="slider" class="sliderSpeed"></div>      
+          <p id="speedLabel" style="text-align: center">75 %</p>       
+        </div>
+      </div>  <!-- motorSettings -->
+      
+      <div id="deviceSettings">
+        <h2>H-Bridge Settings</h2>
+        <div class="box">            
+          <form>
+            <div id="deviceMode" style="text-align: center;" title="H-Bridge operational mode (normal or power-conserving sleep mode)">
+              <p>H-Bridge mode:</p>
+              <input type="radio" id="normal" name="deviceMode" onclick="ChangeDeviceMode()" value="1" checked="checked"><label for="normal">Normal</label>
+              <input type="radio" id="sleep" name="deviceMode" onclick="ChangeDeviceMode()" value="0"><label for="sleep">Sleep</label>
+            </div>
+            
+            <div id="gateDriver" style="text-align: center;" title="Output gate driver signal to external MOSFET switch controlled by GIN pin">
+              <p style="margin-top: 1em;">Gate Driver Output:</p>
+              <input type="radio" id="low" name="gateDriver" onclick="ChangeGateDriver()" value="0" checked="checked"><label for="low">Low</label>
+              <input type="radio" id="high" name="gateDriver" onclick="ChangeGateDriver()" value="1"><label for="high">High</label>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="cleaner"></div>         
+    </div>                
+  </body>
+</html>

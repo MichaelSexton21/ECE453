@@ -1,0 +1,501 @@
+Added Component: Designator=J200(AMPHENOL_RJHSE-5080)
+Add component (AddParameter): Name = "Digi-Key_Part_Number"; Value = "RJHSE-5080-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Amphenol Commercial Products"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "RJHSE-5080"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/RJHSE-5080/Amphenol/view-part/4796273/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=LED300(LED_ASMT-YTB2-0BB02)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_1"; Value = "ASMT-YTB7-0AA02-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_2"; Value = "516-3132-2-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_3"; Value = "516-3132-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_4"; Value = "516-3132-6-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "ASMT-YTB7-0AA02"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Broadcom"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Component: Designator=LED301(LED_ASMT-YTB2-0BB02)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_1"; Value = "ASMT-YTB7-0AA02-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_2"; Value = "516-3132-2-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_3"; Value = "516-3132-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_4"; Value = "516-3132-6-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "ASMT-YTB7-0AA02"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Broadcom"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Component: Designator=LED302(LED_ASMT-YTB2-0BB02)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_1"; Value = "ASMT-YTB7-0AA02-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_2"; Value = "516-3132-2-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_3"; Value = "516-3132-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_4"; Value = "516-3132-6-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "ASMT-YTB7-0AA02"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Broadcom"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Component: Designator=LED303(LED_ASMT-YTB2-0BB02)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_1"; Value = "ASMT-YTB7-0AA02-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_2"; Value = "516-3132-2-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_3"; Value = "516-3132-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_4"; Value = "516-3132-6-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "ASMT-YTB7-0AA02"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Broadcom"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Component: Designator=LED304(LED_ASMT-YTB2-0BB02)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_1"; Value = "ASMT-YTB7-0AA02-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_2"; Value = "516-3132-2-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_3"; Value = "516-3132-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_4"; Value = "516-3132-6-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "ASMT-YTB7-0AA02"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Broadcom"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Component: Designator=LED400(LED_ASMT-YTB2-0BB02)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_1"; Value = "ASMT-YTB7-0AA02-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_2"; Value = "516-3132-2-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_3"; Value = "516-3132-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_4"; Value = "516-3132-6-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "ASMT-YTB7-0AA02"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Broadcom"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Component: Designator=LED401(LED_ASMT-YTB2-0BB02)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_1"; Value = "ASMT-YTB7-0AA02-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_2"; Value = "516-3132-2-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_3"; Value = "516-3132-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_4"; Value = "516-3132-6-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "ASMT-YTB7-0AA02"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Broadcom"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Component: Designator=LED402(LED_ASMT-YTB2-0BB02)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_1"; Value = "ASMT-YTB7-0AA02-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_2"; Value = "516-3132-2-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_3"; Value = "516-3132-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_4"; Value = "516-3132-6-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "ASMT-YTB7-0AA02"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Broadcom"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Component: Designator=LED403(LED_ASMT-YTB2-0BB02)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_1"; Value = "ASMT-YTB7-0AA02-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_2"; Value = "516-3132-2-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_3"; Value = "516-3132-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_4"; Value = "516-3132-6-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "ASMT-YTB7-0AA02"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Broadcom"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Component: Designator=LED404(LED_ASMT-YTB2-0BB02)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_1"; Value = "ASMT-YTB7-0AA02-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_2"; Value = "516-3132-2-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_3"; Value = "516-3132-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_4"; Value = "516-3132-6-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "ASMT-YTB7-0AA02"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Broadcom"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Add Component: Footprint Not Found SIHFR120GE3
+Add Component: Footprint Not Found SIHFR120GE3
+Add Component: Footprint Not Found SIHFR120GE3
+Add Component: Footprint Not Found SIHFR120GE3
+Add Component: Footprint Not Found SIHFR120GE3
+Add Component: Footprint Not Found SIHFR120GE3
+Add Component: Footprint Not Found SIHFR120GE3
+Add Component: Footprint Not Found SIHFR120GE3
+Add Component: Footprint Not Found SIHFR120GE3
+Add Component: Footprint Not Found SIHFR120GE3
+Add Component: Footprint Not Found SIHFR120GE3
+Add Component: Footprint Not Found SIHFR120GE3
+Add Component: Footprint Not Found SIHFR120GE3
+Add Component: Footprint Not Found SIHFR120GE3
+Add Component: Footprint Not Found SIHFR120GE3
+Add Component: Footprint Not Found SIHFR120GE3
+Add Component: Footprint Not Found SIHFR120GE3
+Add Component: Footprint Not Found SIHFR120GE3
+Add Component: Footprint Not Found SIHFR120GE3
+Add Component: Footprint Not Found SIHFR120GE3
+Add Component: Footprint Not Found SIHFR120GE3
+Add Component: Footprint Not Found SIHFR120GE3
+Add Component: Footprint Not Found SIHFR120GE3
+Add Component: Footprint Not Found SIHFR120GE3
+Add Component: Footprint Not Found SIHFR120GE3
+Add Component: Footprint Not Found SIHFR120GE3
+Add Component: Footprint Not Found SIHFR120GE3
+Add Component: Footprint Not Found SIHFR120GE3
+Add Component: Footprint Not Found SIHFR120GE3
+Add Component: Footprint Not Found SIHFR120GE3
+Add Component: Footprint Not Found RESC2012X60N
+Added Component: Designator=R301(RESC2012X65N)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1-2176327-0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R302(RESC2012X65N)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1-2176327-0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Add Component: Footprint Not Found RESC2012X60N
+Added Component: Designator=R304(RESC2012X65N)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1-2176327-0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R305(RESC2012X65N)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1-2176327-0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Add Component: Footprint Not Found RESC2012X60N
+Added Component: Designator=R307(RESC2012X65N)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1-2176327-0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R308(RESC2012X65N)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1-2176327-0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Add Component: Footprint Not Found RESC2012X60N
+Added Component: Designator=R310(RESC2012X65N)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1-2176327-0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R311(RESC2012X65N)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1-2176327-0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Add Component: Footprint Not Found RESC2012X60N
+Added Component: Designator=R313(RESC2012X65N)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1-2176327-0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R314(RESC2012X65N)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1-2176327-0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Add Component: Footprint Not Found RESC2012X60N
+Added Component: Designator=R401(RESC2012X65N)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1-2176327-0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R402(RESC2012X65N)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1-2176327-0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Add Component: Footprint Not Found RESC2012X60N
+Added Component: Designator=R404(RESC2012X65N)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1-2176327-0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R405(RESC2012X65N)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1-2176327-0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Add Component: Footprint Not Found RESC2012X60N
+Added Component: Designator=R407(RESC2012X65N)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1-2176327-0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R408(RESC2012X65N)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1-2176327-0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Add Component: Footprint Not Found RESC2012X60N
+Added Component: Designator=R410(RESC2012X65N)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1-2176327-0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R411(RESC2012X65N)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1-2176327-0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Add Component: Footprint Not Found RESC2012X60N
+Added Component: Designator=R413(RESC2012X65N)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1-2176327-0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R414(RESC2012X65N)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1-2176327-0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=5.0V Pin=J200-1
+Added Pin To Net: NetName=GND Pin=J200-8
+Add Pin To Net: Unknown Pin: Pin Q300-2
+Add Pin To Net: Unknown Pin: Pin Q301-2
+Add Pin To Net: Unknown Pin: Pin Q302-2
+Add Pin To Net: Unknown Pin: Pin Q303-2
+Add Pin To Net: Unknown Pin: Pin Q304-2
+Add Pin To Net: Unknown Pin: Pin Q305-2
+Add Pin To Net: Unknown Pin: Pin Q306-2
+Add Pin To Net: Unknown Pin: Pin Q307-2
+Add Pin To Net: Unknown Pin: Pin Q308-2
+Add Pin To Net: Unknown Pin: Pin Q309-2
+Add Pin To Net: Unknown Pin: Pin Q310-2
+Add Pin To Net: Unknown Pin: Pin Q311-2
+Add Pin To Net: Unknown Pin: Pin Q312-2
+Add Pin To Net: Unknown Pin: Pin Q313-2
+Add Pin To Net: Unknown Pin: Pin Q314-2
+Add Pin To Net: Unknown Pin: Pin Q400-2
+Add Pin To Net: Unknown Pin: Pin Q401-2
+Add Pin To Net: Unknown Pin: Pin Q402-2
+Add Pin To Net: Unknown Pin: Pin Q403-2
+Add Pin To Net: Unknown Pin: Pin Q404-2
+Add Pin To Net: Unknown Pin: Pin Q405-2
+Add Pin To Net: Unknown Pin: Pin Q406-2
+Add Pin To Net: Unknown Pin: Pin Q407-2
+Add Pin To Net: Unknown Pin: Pin Q408-2
+Add Pin To Net: Unknown Pin: Pin Q409-2
+Add Pin To Net: Unknown Pin: Pin Q410-2
+Add Pin To Net: Unknown Pin: Pin Q411-2
+Add Pin To Net: Unknown Pin: Pin Q412-2
+Add Pin To Net: Unknown Pin: Pin Q413-2
+Add Pin To Net: Unknown Pin: Pin Q414-2
+Add Pin To Net: Unknown Pin: Pin R300-1
+Added Pin To Net: NetName=5.0V Pin=R301-2
+Added Pin To Net: NetName=5.0V Pin=R302-2
+Add Pin To Net: Unknown Pin: Pin R303-1
+Added Pin To Net: NetName=5.0V Pin=R304-2
+Added Pin To Net: NetName=5.0V Pin=R305-2
+Add Pin To Net: Unknown Pin: Pin R306-1
+Added Pin To Net: NetName=5.0V Pin=R307-2
+Added Pin To Net: NetName=5.0V Pin=R308-2
+Add Pin To Net: Unknown Pin: Pin R309-1
+Added Pin To Net: NetName=5.0V Pin=R310-2
+Added Pin To Net: NetName=5.0V Pin=R311-2
+Add Pin To Net: Unknown Pin: Pin R312-1
+Added Pin To Net: NetName=5.0V Pin=R313-2
+Added Pin To Net: NetName=5.0V Pin=R314-2
+Add Pin To Net: Unknown Pin: Pin R400-1
+Added Pin To Net: NetName=5.0V Pin=R401-2
+Added Pin To Net: NetName=5.0V Pin=R402-2
+Add Pin To Net: Unknown Pin: Pin R403-1
+Added Pin To Net: NetName=5.0V Pin=R404-2
+Added Pin To Net: NetName=5.0V Pin=R405-2
+Add Pin To Net: Unknown Pin: Pin R406-1
+Added Pin To Net: NetName=5.0V Pin=R407-2
+Added Pin To Net: NetName=5.0V Pin=R408-2
+Add Pin To Net: Unknown Pin: Pin R409-1
+Added Pin To Net: NetName=5.0V Pin=R410-2
+Added Pin To Net: NetName=5.0V Pin=R411-2
+Add Pin To Net: Unknown Pin: Pin R412-1
+Added Pin To Net: NetName=5.0V Pin=R413-2
+Added Pin To Net: NetName=5.0V Pin=R414-2
+Added Pin To Net: NetName=NetLED300_1 Pin=LED300-1
+Added Net: Name=NetLED300_1
+Added Pin To Net: NetName=NetLED300_2 Pin=LED300-2
+Added Net: Name=NetLED300_2
+Added Pin To Net: NetName=NetLED300_3 Pin=LED300-3
+Added Net: Name=NetLED300_3
+Added Pin To Net: NetName=NetLED300_4 Pin=LED300-4
+Added Pin To Net: NetName=NetLED300_4 Pin=R302-1
+Added Net: Name=NetLED300_4
+Added Pin To Net: NetName=NetLED300_5 Pin=LED300-5
+Added Pin To Net: NetName=NetLED300_5 Pin=R301-1
+Added Net: Name=NetLED300_5
+Added Pin To Net: NetName=NetLED300_6 Pin=LED300-6
+Added Net: Name=NetLED300_6
+Added Pin To Net: NetName=NetLED301_1 Pin=LED301-1
+Added Net: Name=NetLED301_1
+Added Pin To Net: NetName=NetLED301_2 Pin=LED301-2
+Added Net: Name=NetLED301_2
+Added Pin To Net: NetName=NetLED301_3 Pin=LED301-3
+Added Net: Name=NetLED301_3
+Added Pin To Net: NetName=NetLED301_4 Pin=LED301-4
+Added Pin To Net: NetName=NetLED301_4 Pin=R305-1
+Added Net: Name=NetLED301_4
+Added Pin To Net: NetName=NetLED301_5 Pin=LED301-5
+Added Pin To Net: NetName=NetLED301_5 Pin=R304-1
+Added Net: Name=NetLED301_5
+Added Pin To Net: NetName=NetLED301_6 Pin=LED301-6
+Added Net: Name=NetLED301_6
+Added Pin To Net: NetName=NetLED302_1 Pin=LED302-1
+Added Net: Name=NetLED302_1
+Added Pin To Net: NetName=NetLED302_2 Pin=LED302-2
+Added Net: Name=NetLED302_2
+Added Pin To Net: NetName=NetLED302_3 Pin=LED302-3
+Added Net: Name=NetLED302_3
+Added Pin To Net: NetName=NetLED302_4 Pin=LED302-4
+Added Pin To Net: NetName=NetLED302_4 Pin=R308-1
+Added Net: Name=NetLED302_4
+Added Pin To Net: NetName=NetLED302_5 Pin=LED302-5
+Added Pin To Net: NetName=NetLED302_5 Pin=R307-1
+Added Net: Name=NetLED302_5
+Added Pin To Net: NetName=NetLED302_6 Pin=LED302-6
+Added Net: Name=NetLED302_6
+Added Pin To Net: NetName=NetLED303_1 Pin=LED303-1
+Added Net: Name=NetLED303_1
+Added Pin To Net: NetName=NetLED303_2 Pin=LED303-2
+Added Net: Name=NetLED303_2
+Added Pin To Net: NetName=NetLED303_3 Pin=LED303-3
+Added Net: Name=NetLED303_3
+Added Pin To Net: NetName=NetLED303_4 Pin=LED303-4
+Added Pin To Net: NetName=NetLED303_4 Pin=R311-1
+Added Net: Name=NetLED303_4
+Added Pin To Net: NetName=NetLED303_5 Pin=LED303-5
+Added Pin To Net: NetName=NetLED303_5 Pin=R310-1
+Added Net: Name=NetLED303_5
+Added Pin To Net: NetName=NetLED303_6 Pin=LED303-6
+Added Net: Name=NetLED303_6
+Added Pin To Net: NetName=NetLED304_1 Pin=LED304-1
+Added Net: Name=NetLED304_1
+Added Pin To Net: NetName=NetLED304_2 Pin=LED304-2
+Added Net: Name=NetLED304_2
+Added Pin To Net: NetName=NetLED304_3 Pin=LED304-3
+Added Net: Name=NetLED304_3
+Added Pin To Net: NetName=NetLED304_4 Pin=LED304-4
+Added Pin To Net: NetName=NetLED304_4 Pin=R314-1
+Added Net: Name=NetLED304_4
+Added Pin To Net: NetName=NetLED304_5 Pin=LED304-5
+Added Pin To Net: NetName=NetLED304_5 Pin=R313-1
+Added Net: Name=NetLED304_5
+Added Pin To Net: NetName=NetLED304_6 Pin=LED304-6
+Added Net: Name=NetLED304_6
+Added Pin To Net: NetName=NetLED400_1 Pin=LED400-1
+Added Net: Name=NetLED400_1
+Added Pin To Net: NetName=NetLED400_2 Pin=LED400-2
+Added Net: Name=NetLED400_2
+Added Pin To Net: NetName=NetLED400_3 Pin=LED400-3
+Added Net: Name=NetLED400_3
+Added Pin To Net: NetName=NetLED400_4 Pin=LED400-4
+Added Pin To Net: NetName=NetLED400_4 Pin=R402-1
+Added Net: Name=NetLED400_4
+Added Pin To Net: NetName=NetLED400_5 Pin=LED400-5
+Added Pin To Net: NetName=NetLED400_5 Pin=R401-1
+Added Net: Name=NetLED400_5
+Added Pin To Net: NetName=NetLED400_6 Pin=LED400-6
+Added Net: Name=NetLED400_6
+Added Pin To Net: NetName=NetLED401_1 Pin=LED401-1
+Added Net: Name=NetLED401_1
+Added Pin To Net: NetName=NetLED401_2 Pin=LED401-2
+Added Net: Name=NetLED401_2
+Added Pin To Net: NetName=NetLED401_3 Pin=LED401-3
+Added Net: Name=NetLED401_3
+Added Pin To Net: NetName=NetLED401_4 Pin=LED401-4
+Added Pin To Net: NetName=NetLED401_4 Pin=R405-1
+Added Net: Name=NetLED401_4
+Added Pin To Net: NetName=NetLED401_5 Pin=LED401-5
+Added Pin To Net: NetName=NetLED401_5 Pin=R404-1
+Added Net: Name=NetLED401_5
+Added Pin To Net: NetName=NetLED401_6 Pin=LED401-6
+Added Net: Name=NetLED401_6
+Added Pin To Net: NetName=NetLED402_1 Pin=LED402-1
+Added Net: Name=NetLED402_1
+Added Pin To Net: NetName=NetLED402_2 Pin=LED402-2
+Added Net: Name=NetLED402_2
+Added Pin To Net: NetName=NetLED402_3 Pin=LED402-3
+Added Net: Name=NetLED402_3
+Added Pin To Net: NetName=NetLED402_4 Pin=LED402-4
+Added Pin To Net: NetName=NetLED402_4 Pin=R408-1
+Added Net: Name=NetLED402_4
+Added Pin To Net: NetName=NetLED402_5 Pin=LED402-5
+Added Pin To Net: NetName=NetLED402_5 Pin=R407-1
+Added Net: Name=NetLED402_5
+Added Pin To Net: NetName=NetLED402_6 Pin=LED402-6
+Added Net: Name=NetLED402_6
+Added Pin To Net: NetName=NetLED403_1 Pin=LED403-1
+Added Net: Name=NetLED403_1
+Added Pin To Net: NetName=NetLED403_2 Pin=LED403-2
+Added Net: Name=NetLED403_2
+Added Pin To Net: NetName=NetLED403_3 Pin=LED403-3
+Added Net: Name=NetLED403_3
+Added Pin To Net: NetName=NetLED403_4 Pin=LED403-4
+Added Pin To Net: NetName=NetLED403_4 Pin=R411-1
+Added Net: Name=NetLED403_4
+Added Pin To Net: NetName=NetLED403_5 Pin=LED403-5
+Added Pin To Net: NetName=NetLED403_5 Pin=R410-1
+Added Net: Name=NetLED403_5
+Added Pin To Net: NetName=NetLED403_6 Pin=LED403-6
+Added Net: Name=NetLED403_6
+Added Pin To Net: NetName=NetLED404_1 Pin=LED404-1
+Added Net: Name=NetLED404_1
+Added Pin To Net: NetName=NetLED404_2 Pin=LED404-2
+Added Net: Name=NetLED404_2
+Added Pin To Net: NetName=NetLED404_3 Pin=LED404-3
+Added Net: Name=NetLED404_3
+Added Pin To Net: NetName=NetLED404_4 Pin=LED404-4
+Added Pin To Net: NetName=NetLED404_4 Pin=R414-1
+Added Net: Name=NetLED404_4
+Added Pin To Net: NetName=NetLED404_5 Pin=LED404-5
+Added Pin To Net: NetName=NetLED404_5 Pin=R413-1
+Added Net: Name=NetLED404_5
+Added Pin To Net: NetName=NetLED404_6 Pin=LED404-6
+Added Net: Name=NetLED404_6
+Added Pin To Net: NetName=P9_0_LED_RED Pin=J200-2
+Added Net: Name=P9_0_LED_RED
+Added Pin To Net: NetName=P9_1_LED_GREEN Pin=J200-3
+Added Net: Name=P9_1_LED_GREEN
+Added Pin To Net: NetName=P9_2_LED_BLUE Pin=J200-4
+Added Net: Name=P9_2_LED_BLUE
+Added Class: Name=02_Input
+Added Class: Name=03_LEDs_0_4
+Added Class: Name=04_LEDs_5_9
+Added Room: Name=02_Input
+Added Room: Name=03_LEDs_0_4
+Added Room: Name=04_LEDs_5_9

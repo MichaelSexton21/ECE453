@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=MOTOR1_+ Pin=J400-1
+Removed Pin From Net: NetName=MOTOR1_- Pin=J400-2
+Added Pin To Net: NetName=MOTOR1_+ Pin=J400-2
+Added Pin To Net: NetName=MOTOR1_- Pin=J400-3
+Added Pin To Net: NetName=NetJ400_1 Pin=J400-1
+Added Pin To Net: NetName=NetJ400_1 Pin=MOTOR400-5
+Added Net: Name=NetJ400_1
+Added Room: Name=04_Motor
+Added Room: Name=05_Buzzer
+Added Room: Name=06_LEDs

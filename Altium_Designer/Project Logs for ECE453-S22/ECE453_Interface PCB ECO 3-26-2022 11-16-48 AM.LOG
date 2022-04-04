@@ -1,0 +1,3 @@
+Change Component Footprint: Designator=IC201 Old Footprint=TSOT95P280X100-5N New Footprint=TSOT23127P600-8N
+Added Pin To Net: NetName=VIN Pin=C201-1
+Added Pin To Net: NetName=GND Pin=C201-2

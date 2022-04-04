@@ -1,0 +1,36 @@
+Removed Pin From Net: NetName=5.0V Pin=MOTOR400-1
+Removed Pin From Net: NetName=P10_2_MOTOR1_INA Pin=MOTOR400-2
+Removed Pin From Net: NetName=P10_3_MOTOR1_INB Pin=MOTOR400-3
+Removed Pin From Net: NetName=P10_6_MOTOR_OEn Pin=MOTOR400-4
+Removed Pin From Net: NetName=MOTOR2_+ Pin=MOTOR400-5
+Removed Pin From Net: NetName=GND Pin=MOTOR400-6
+Removed Pin From Net: NetName=MOTOR1_+ Pin=MOTOR400-7
+Removed Pin From Net: NetName=5.0V Pin=MOTOR400-8
+Removed Pin From Net: NetName=CRES_RES0 Pin=MOTOR400-9
+Removed Pin From Net: NetName=MOTOR1_- Pin=MOTOR400-14
+Removed Pin From Net: NetName=GND Pin=MOTOR400-15
+Removed Pin From Net: NetName=MOTOR2_- Pin=MOTOR400-16
+Removed Pin From Net: NetName=5.0V Pin=MOTOR400-17
+Removed Pin From Net: NetName=P10_5_MOTOR2_INB Pin=MOTOR400-18
+Removed Pin From Net: NetName=P10_4_MOTOR2_INA Pin=MOTOR400-19
+Removed Pin From Net: NetName=GND Pin=MOTOR400-20
+Removed Member From Class: ClassName=04_Motor Member=MOTOR400
+Added Component: Designator=MOTOR?(SOP65P640X120-20N)
+Added Pin To Net: NetName=5.0V Pin=MOTOR?-1
+Added Pin To Net: NetName=P10_2_MOTOR1_INA Pin=MOTOR?-2
+Added Pin To Net: NetName=P10_3_MOTOR1_INB Pin=MOTOR?-3
+Added Pin To Net: NetName=P10_6_MOTOR_OEn Pin=MOTOR?-4
+Added Pin To Net: NetName=MOTOR2_+ Pin=MOTOR?-5
+Added Pin To Net: NetName=GND Pin=MOTOR?-6
+Added Pin To Net: NetName=MOTOR1_+ Pin=MOTOR?-7
+Added Pin To Net: NetName=5.0V Pin=MOTOR?-8
+Added Pin To Net: NetName=CRES_RES0 Pin=MOTOR?-9
+Added Pin To Net: NetName=MOTOR1_- Pin=MOTOR?-14
+Added Pin To Net: NetName=GND Pin=MOTOR?-15
+Added Pin To Net: NetName=MOTOR2_- Pin=MOTOR?-16
+Added Pin To Net: NetName=5.0V Pin=MOTOR?-17
+Added Pin To Net: NetName=P10_5_MOTOR2_INB Pin=MOTOR?-18
+Added Pin To Net: NetName=P10_4_MOTOR2_INA Pin=MOTOR?-19
+Added Pin To Net: NetName=GND Pin=MOTOR?-20
+Added Pin To Net: NetName=GND Pin=MOTOR?-21
+Added Member To Class: ClassName=04_Motor Member=Component MOTOR? MOTOR DRIVER

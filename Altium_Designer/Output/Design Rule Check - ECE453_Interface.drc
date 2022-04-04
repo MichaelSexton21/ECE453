@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\stepa\ECE453\Altium_Designer\ECE453_Interface.PcbDoc
-Date     : 4/1/2022
-Time     : 10:27:06 AM
+Date     : 4/4/2022
+Time     : 3:20:17 PM
 
 Processing Rule : Clearance Constraint (Gap=0.2mm) (All),(All)
 Rule Violations :0
@@ -100,4 +100,4 @@ Rule Violations :0
 
 Violations Detected : 52
 Waived Violations : 0
-Time Elapsed        : 00:00:01
+Time Elapsed        : 00:00:02

@@ -1,0 +1,13 @@
+Added Component: Designator=C201(CAPM3216X18N)
+Add component (AddParameter): Name = "Datasheet Link"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "AVX"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "TAJR334M020RNJ"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VIN Pin=C201-1
+Added Pin To Net: NetName=GND Pin=C201-2
+Added Member To Class: ClassName=04_Motor Member=Component J400 282837-3
+Added Member To Class: ClassName=04_Motor Member=Component J401 282837-3
+Added Member To Class: ClassName=04_Motor Member=Component J402 282837-3
+Added Member To Class: ClassName=04_Motor Member=Component J403 282837-3

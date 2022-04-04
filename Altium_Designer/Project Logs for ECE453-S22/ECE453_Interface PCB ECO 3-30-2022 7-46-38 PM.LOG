@@ -1,0 +1,9 @@
+Added Component: Designator=J300(HDR1X7_Stagger)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.farnell.com/cad/1737268.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.farnell.com/cad/1737268.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "http://katalog.we-online.de/em/datasheet/6130xx11121.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://katalog.we-online.de/em/datasheet/6130xx11121.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "https://datasheet.ciiva.com/741/xrxczzzsxxn-rc-st-11635-b-741840.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://datasheet.ciiva.com/741/xrxczzzsxxn-rc-st-11635-b-741840.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=5.0V Pin=J300-1
+Added Pin To Net: NetName=GND Pin=J300-2

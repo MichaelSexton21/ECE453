@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=P9_0_LED_RED Pin=Q403-1
+Removed Pin From Net: NetName=P9_0_LED_RED Pin=Q404-1
+Removed Pin From Net: NetName=GND Pin=Q404-2
+Removed Pin From Net: NetName=P9_1_LED_GREEN Pin=Q409-1
+Removed Pin From Net: NetName=GND Pin=Q409-2
+Removed Pin From Net: NetName=5.0V Pin=R406-1
+Removed Pin From Net: NetName=5.0V Pin=R413-2
+Removed Pin From Net: NetName=5.0V Pin=R414-2
+Removed Member From Class: ClassName=04_LEDs_5_9 Member=LED404
+Removed Member From Class: ClassName=04_LEDs_5_9 Member=Q404
+Removed Member From Class: ClassName=04_LEDs_5_9 Member=Q409
+Removed Member From Class: ClassName=04_LEDs_5_9 Member=Q414
+Removed Member From Class: ClassName=04_LEDs_5_9 Member=R406
+Removed Member From Class: ClassName=04_LEDs_5_9 Member=R413
+Removed Member From Class: ClassName=04_LEDs_5_9 Member=R414

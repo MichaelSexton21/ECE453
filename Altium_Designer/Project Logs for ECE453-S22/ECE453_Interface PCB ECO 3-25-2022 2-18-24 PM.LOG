@@ -1,0 +1,13 @@
+Added Component: Designator=J600(AMPHENOL_RJHSE-5080)
+Add component (AddParameter): Name = "Digi-Key_Part_Number"; Value = "RJHSE-5080-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Amphenol Commercial Products"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "RJHSE-5080"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/RJHSE-5080/Amphenol/view-part/4796273/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=5.0V Pin=J600-1
+Added Pin To Net: NetName=P9_0_LED_RED Pin=J600-2
+Added Pin To Net: NetName=P9_1_LED_GREEN Pin=J600-3
+Added Pin To Net: NetName=P9_2_LED_BLUE Pin=J600-4
+Added Pin To Net: NetName=GND Pin=J600-8
+Added Member To Class: ClassName=06_LEDs Member=Component J600 RJHSE-5080

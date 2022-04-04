@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=P5_2_BUZZER Pin=J301-15
+Added Pin To Net: NetName=P5_2_BUZZER Pin=J302-16
+Added Room: Name=04_Motor
+Added Room: Name=05_Buzzer
+Added Room: Name=06_LEDs

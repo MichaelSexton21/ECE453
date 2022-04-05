@@ -35,10 +35,14 @@ void task_bb8_motor(void *param){
 	/* Start the PWM output */
 	rslt = cyhal_pwm_start(&pwm_obj_motor2);
 
-  //Start assuming forward (in case of inital turns)
+  // Start assuming forward (in case of initial turns)
 	bb8_motor_data_t buffer;
   LVHB_SetDirection(drvConfig, true, lvhbBridge1);
   LVHB_SetDirection(drvConfig, true, lvhbBridge2);
+
+  // initialize speeds to zero
+  int curLeftSpeed = 0;
+  int curRightSpeed = 0;
 
 	for(;;)
     {        
@@ -48,10 +52,14 @@ void task_bb8_motor(void *param){
          * ece453_led_data_t struct when determining what data will be
          * received from the BLE task.*/
 
-    	xQueueReceive(ece453_led_data_q, &buffer, portMAX_DELAY);
+      // if user is not pressing any controls, then gradually slow the robot down
+      // rather than abruptly stopping the wheels
+      if (buffer.up == 0 && buffer.down == 0 && buffer.left == 0 && buffer.right == 0) {
+        curLeftSpeed -= 2;
+        curRightSpeed -= 2;
+      }
 
-      int curLeftSpeed = 0;
-      int curRightSpeed = 0;
+    	xQueueReceive(ece453_led_data_q, &buffer, portMAX_DELAY);
 
       // Are we back or forward
     	if(buffer.up == 1 && buffer.down == 0){
@@ -67,22 +75,22 @@ void task_bb8_motor(void *param){
         curRightSpeed = MAX_SPEED;
     	}
 
-      //Are we left or right
+      // Are we left or right
     	if(buffer.left == 1 && buffer.right == 0){
-        curRightSpeed = curRightSpeed + 20;
+        curRightSpeed += 20;
     	}
     	else if(buffer.right == 1 && buffer.left == 0){
-        curLeftSpeed = curLeftSpeed + 20;
+        curLeftSpeed += 20;
     	}
 
       LVHB_RotateProportional(drvConfig, curLeftSpeed, lvhbBridge1);
       LVHB_RotateProportional(drvConfig, curRightSpeed, lvhbBridge2);
 
       /* Cases:
-       * UP ONLY: up and down FORWARDS
-       * DOWN ONLY: up and down BACKWARDS
-       * LEFT ONLY: right wheel ON, left wheel OFF
-       * RIGHT ONLY: right wheel OFF, left wheel ON
+       * UP ONLY: L and R FORWARDS
+       * DOWN ONLY: L and R BACKWARDS
+       * LEFT ONLY: R ON, L OFF
+       * RIGHT ONLY: R OFF, L ON
        * UP/LEFT: 
        * DOWN/LEFT: 
        * UP/RIGHT: 

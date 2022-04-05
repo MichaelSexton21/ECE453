@@ -1,0 +1,222 @@
+Removed Pin From Net: NetName=5.0V Pin=J200-1
+Change Footprint: Footprint Not Found LED_ASMT-YTD7-0AA02
+Change Footprint: Footprint Not Found LED_ASMT-YTD7-0AA02
+Change Footprint: Footprint Not Found LED_ASMT-YTD7-0AA02
+Change Footprint: Footprint Not Found LED_ASMT-YTD7-0AA02
+Change Footprint: Footprint Not Found LED_ASMT-YTD7-0AA02
+Change Footprint: Footprint Not Found LED_ASMT-YTD7-0AA02
+Change Footprint: Footprint Not Found LED_ASMT-YTD7-0AA02
+Change Footprint: Footprint Not Found LED_ASMT-YTD7-0AA02
+Change component parameters: Designator = "J200" ("J200"); Footprint = "CONN_RJSBE5080_16P13X12P57_AMP"; UniqueID = "\RSNNYEQP" ("\RSNNYEQP")
+Change component parameters (AddParameter): Name = "Digi-Key_Part_Number"; Value = "RJHSE-5080-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Digikey Part No."; Value = "RJHSE-5080-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Amphenol CS (Commercial Products)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part No."; Value = "RJHSE-5080"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Amphenol Commercial Products"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "RJHSE-5080"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/RJHSE-5080/Amphenol/view-part/4796273/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D(LEDSC160X320X90-2N)
+Add component (AddParameter): Name = "Digi-Key_Part_Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Purchase_URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Dialight"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "598-8220-107F"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "1206 Dialight"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/598-8220-107F/Dialight/view-part/454138/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R200(RESC2012X65N)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1625868-6"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R201(RESC2012X65N)
+Add component (AddParameter): Name = "Availability"; Value = "Warning"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/1614886-1/TE%20Connectivity/view-part/2202344/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "EU_RoHS_Compliance"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1614886-1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power_Rating"; Value = ".1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/1614886-1/TE%20Connectivity/view-part/2202344/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = ".1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage_Rating"; Value = "100 V"; VariantName = "[No Variations]"
+Added Component: Designator=R202(RESC2012X65N)
+Add component (AddParameter): Name = "Availability"; Value = "Warning"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/1614886-1/TE%20Connectivity/view-part/2202344/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "EU_RoHS_Compliance"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1614886-1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power_Rating"; Value = ".1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/1614886-1/TE%20Connectivity/view-part/2202344/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = ".1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage_Rating"; Value = "100 V"; VariantName = "[No Variations]"
+Added Component: Designator=R203(RESC2012X65N)
+Add component (AddParameter): Name = "Availability"; Value = "Warning"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/1614886-1/TE%20Connectivity/view-part/2202344/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "EU_RoHS_Compliance"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1614886-1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power_Rating"; Value = ".1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/1614886-1/TE%20Connectivity/view-part/2202344/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = ".1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage_Rating"; Value = "100 V"; VariantName = "[No Variations]"
+Added Component: Designator=TP200(TP-SMC-1206)
+Add component (AddParameter): Name = "Case Size"; Value = "1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/6439/eng-ds-1773266-a-6439169.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/6439/eng-ds-1773266-a-6439169.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://datasheet.ciiva.com/30136/1773266-a-30136341.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.ciiva.com/30136/1773266-a-30136341.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "https://datasheet.ciiva.com/6439/eng-ds-1773266-a-6439080.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://datasheet.ciiva.com/6439/eng-ds-1773266-a-6439080.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "https://datasheet.ciiva.com/6439/eng-ds-1773266-a-6439081.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "https://datasheet.ciiva.com/6439/eng-ds-1773266-a-6439081.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5Description"; Value = "https://datasheet.ciiva.com/6439/eng-ds-1773266-a-6439083.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5URL"; Value = "https://datasheet.ciiva.com/6439/eng-ds-1773266-a-6439083.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dimension"; Value = "3.2 x 1.6 x 1.25mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Family"; Value = "RC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity (Tyco Electronics)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "1625854-1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-55 to 125 C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part No"; Value = "1625854-1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Rating"; Value = "N/R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.28, 10=0.261, 25=0.224, 50=0.1902, 100=0.1828, 250=0.1641, 500=0.1567, 1000=0.1306 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance Value"; Value = "0 Ohm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "31937"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number"; Value = "A106143CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "N/R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Terminal Pitch"; Value = "N/R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination Style"; Value = "N/R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "N/R"; VariantName = "[No Variations]"
+Added Component: Designator=TP300(TP-SMC-1206)
+Add component (AddParameter): Name = "Case Size"; Value = "1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/6439/eng-ds-1773266-a-6439169.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/6439/eng-ds-1773266-a-6439169.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://datasheet.ciiva.com/30136/1773266-a-30136341.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.ciiva.com/30136/1773266-a-30136341.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "https://datasheet.ciiva.com/6439/eng-ds-1773266-a-6439080.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://datasheet.ciiva.com/6439/eng-ds-1773266-a-6439080.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "https://datasheet.ciiva.com/6439/eng-ds-1773266-a-6439081.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "https://datasheet.ciiva.com/6439/eng-ds-1773266-a-6439081.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5Description"; Value = "https://datasheet.ciiva.com/6439/eng-ds-1773266-a-6439083.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5URL"; Value = "https://datasheet.ciiva.com/6439/eng-ds-1773266-a-6439083.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dimension"; Value = "3.2 x 1.6 x 1.25mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Family"; Value = "RC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity (Tyco Electronics)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "1625854-1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-55 to 125 C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part No"; Value = "1625854-1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Rating"; Value = "N/R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.28, 10=0.261, 25=0.224, 50=0.1902, 100=0.1828, 250=0.1641, 500=0.1567, 1000=0.1306 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance Value"; Value = "0 Ohm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "31937"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number"; Value = "A106143CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "N/R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Terminal Pitch"; Value = "N/R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination Style"; Value = "N/R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "N/R"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=D-C
+Added Pin To Net: NetName=P9_1_LED_GREEN Pin=Q305-1
+Added Pin To Net: NetName=P9_1_LED_GREEN Pin=Q306-1
+Added Pin To Net: NetName=P9_1_LED_GREEN Pin=Q307-1
+Added Pin To Net: NetName=P9_1_LED_GREEN Pin=Q308-1
+Added Pin To Net: NetName=P9_1_LED_GREEN Pin=Q309-1
+Added Pin To Net: NetName=5.0V Pin=R200-2
+Added Pin To Net: NetName=GND Pin=R201-1
+Added Pin To Net: NetName=P9_0_LED_RED Pin=R201-2
+Added Pin To Net: NetName=GND Pin=R202-1
+Added Pin To Net: NetName=P9_2_LED_BLUE Pin=R202-2
+Added Pin To Net: NetName=GND Pin=R203-1
+Added Pin To Net: NetName=P9_1_LED_GREEN Pin=R203-2
+Added Pin To Net: NetName=5.0V Pin=TP200-1
+Added Pin To Net: NetName=5.0V Pin=TP300-1
+Change Net Name : Old Net Name=NetLED300_2 New Net Name=LED_1_GREEN_OUT
+Change Net Name : Old Net Name=NetLED300_3 New Net Name=LED_1_RED_OUT
+Change Net Name : Old Net Name=NetLED300_4 New Net Name=LED_1_RED_IN
+Change Net Name : Old Net Name=NetLED300_5 New Net Name=LED_1_GREEN_IN
+Change Net Name : Old Net Name=NetLED300_6 New Net Name=LED_1_BLUE_IN
+Change Net Name : Old Net Name=NetLED301_1 New Net Name=LED_2_BLUE_OUT
+Change Net Name : Old Net Name=NetLED301_2 New Net Name=LED_2_GREEN_OUT
+Change Net Name : Old Net Name=NetLED301_3 New Net Name=LED_2_RED_OUT
+Change Net Name : Old Net Name=NetLED301_4 New Net Name=LED_2_RED_IN
+Change Net Name : Old Net Name=NetLED301_5 New Net Name=LED_2_GREEN_IN
+Change Net Name : Old Net Name=NetLED301_6 New Net Name=LED_2_BLUE_IN
+Change Net Name : Old Net Name=NetLED302_2 New Net Name=LED_3_GREEN_OUT
+Change Net Name : Old Net Name=NetLED302_3 New Net Name=LED_3_RED_OUT
+Change Net Name : Old Net Name=NetLED302_4 New Net Name=LED_3_RED_IN
+Change Net Name : Old Net Name=NetLED302_5 New Net Name=LED_3_GREEN_IN
+Change Net Name : Old Net Name=NetLED302_6 New Net Name=LED_3_BLUE_IN
+Change Net Name : Old Net Name=NetLED303_1 New Net Name=LED_4_BLUE_OUT
+Change Net Name : Old Net Name=NetLED303_2 New Net Name=LED_4_GREEN_OUT
+Change Net Name : Old Net Name=NetLED303_3 New Net Name=LED_4_RED_OUT
+Change Net Name : Old Net Name=NetLED303_4 New Net Name=LED_4_RED_IN
+Change Net Name : Old Net Name=NetLED303_5 New Net Name=LED_4_GREEN_IN
+Change Net Name : Old Net Name=NetLED303_6 New Net Name=LED_4_BLUE_IN
+Change Net Name : Old Net Name=NetLED304_1 New Net Name=LED_5_BLUE_OUT
+Change Net Name : Old Net Name=NetLED304_2 New Net Name=LED_5_GREEN_OUT
+Change Net Name : Old Net Name=NetLED304_3 New Net Name=LED_5_RED_OUT
+Change Net Name : Old Net Name=NetLED304_4 New Net Name=LED_5_RED_IN
+Change Net Name : Old Net Name=NetLED304_5 New Net Name=LED_5_GREEN_IN
+Change Net Name : Old Net Name=NetLED304_6 New Net Name=LED_5_BLUE_IN
+Change Net Name : Old Net Name=NetLED400_1 New Net Name=LED_6_BLUE_OUT
+Change Net Name : Old Net Name=NetLED400_2 New Net Name=LED_6_GREEN_OUT
+Change Net Name : Old Net Name=NetLED400_3 New Net Name=LED_6_RED_OUT
+Change Net Name : Old Net Name=NetLED400_4 New Net Name=LED_6_RED_IN
+Change Net Name : Old Net Name=NetLED400_5 New Net Name=LED_6_BLUE_IN
+Change Net Name : Old Net Name=NetLED400_6 New Net Name=LED_6_GREEN_IN
+Change Net Name : Old Net Name=NetLED401_1 New Net Name=LED_7_BLUE_OUT
+Change Net Name : Old Net Name=NetLED401_2 New Net Name=LED_7_GREEN_OUT
+Change Net Name : Old Net Name=NetLED401_5 New Net Name=LED_7_BLUE_IN
+Change Net Name : Old Net Name=NetLED401_6 New Net Name=LED_7_GREEN_IN
+Change Net Name : Old Net Name=NetLED402_1 New Net Name=LED_8_BLUE_OUT
+Change Net Name : Old Net Name=NetLED402_4 New Net Name=LED_8_RED_IN
+Change Net Name : Old Net Name=NetLED402_5 New Net Name=LED_8_GREEN_IN
+Change Net Name : Old Net Name=NetLED402_6 New Net Name=LED_8_BLUE_IN
+Added Pin To Net: NetName=LED_1_BLUE_OUT Pin=LED300-1
+Added Pin To Net: NetName=LED_1_BLUE_OUT Pin=LED302-1
+Added Pin To Net: NetName=LED_1_BLUE_OUT Pin=Q300-3
+Added Pin To Net: NetName=LED_1_BLUE_OUT Pin=Q302-3
+Added Net: Name=LED_1_BLUE_OUT
+Added Pin To Net: NetName=LED_7_RED_IN Pin=LED401-3
+Added Pin To Net: NetName=LED_7_RED_IN Pin=LED401-4
+Added Pin To Net: NetName=LED_7_RED_IN Pin=Q411-3
+Added Pin To Net: NetName=LED_7_RED_IN Pin=R405-1
+Added Net: Name=LED_7_RED_IN
+Added Pin To Net: NetName=LED_8_GREEN_OUT Pin=Q407-3
+Added Net: Name=LED_8_GREEN_OUT
+Added Pin To Net: NetName=LED_8_RED_OUT Pin=Q412-3
+Added Net: Name=LED_8_RED_OUT
+Added Pin To Net: NetName=STATUS_LED_IN Pin=D-A
+Added Pin To Net: NetName=STATUS_LED_IN Pin=R200-1
+Added Net: Name=STATUS_LED_IN
+Added Member To Class: ClassName=02_Input Member=Component D 598-8220-107F
+Added Member To Class: ClassName=02_Input Member=Component R200 1625868-6
+Added Member To Class: ClassName=02_Input Member=Component R201 1614886-1
+Added Member To Class: ClassName=02_Input Member=Component R202 1614886-1
+Added Member To Class: ClassName=02_Input Member=Component R203 1614886-1
+Added Member To Class: ClassName=02_Input Member=Component TP200 TP_1206
+Added Member To Class: ClassName=03_LEDs_0_4 Member=Component TP300 TP_1206
+Added Room: Name=02_Input
+Added Room: Name=03_LEDs_0_4
+Added Room: Name=04_LEDs_5_9

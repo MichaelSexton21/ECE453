@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
-PCB File : C:\Users\stepa\ECE453\Altium_Designer_LEDs\ECE453_Interface_LEDs.PcbDoc
+PCB File : C:\Users\mjs47\Documents\ECE453\Altium_Designer_LEDs\ECE453_Interface_LEDs.PcbDoc
 Date     : 4/4/2022
-Time     : 7:19:52 PM
+Time     : 11:07:54 PM
 
 Processing Rule : Clearance Constraint (Gap=0.305mm) (All),(InPolygon)
 Rule Violations :0
@@ -13,136 +13,7 @@ Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
 
 Processing Rule : Un-Routed Net Constraint ( (All) )
-   Violation between Un-Routed Net Constraint: Net STATUS_LED_IN Between Pad D200-A(32.537mm,9.398mm) on Top Layer And Pad R200-1(32.614mm,13.538mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad D200-C(32.537mm,6.348mm) on Top Layer And Pad R201-1(38.749mm,13.056mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net P9_0_LED_RED Between Pad J200-2(12.7mm,8.992mm) on Multi-Layer And Pad R201-2(38.749mm,14.926mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net P9_1_LED_GREEN Between Pad J200-3(10.922mm,10.008mm) on Multi-Layer And Pad Q308-1(25.767mm,24.589mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net P9_2_LED_BLUE Between Pad J200-4(12.7mm,11.024mm) on Multi-Layer And Pad Q313-1(17.385mm,24.589mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad Q312-2(4.991mm,24.486mm) on Top Layer [Unplated] And Pad J200-8(12.7mm,15.088mm) on Multi-Layer 
-   Violation between Un-Routed Net Constraint: Net LED_1_BLUE_OUT Between Pad LED302-1(20.142mm,58.814mm) on Top Layer And Pad LED300-1(28.495mm,74.549mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net LED_1_BLUE_OUT Between Pad LED300-1(28.495mm,74.549mm) on Top Layer And Pad Q300-3(36.144mm,92.761mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net LED_1_GREEN_OUT Between Pad LED300-2(27.595mm,74.549mm) on Top Layer And Pad Q305-3(27.787mm,92.761mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net LED_1_RED_OUT Between Pad Q310-3(19.405mm,92.761mm) on Top Layer [Unplated] And Pad LED300-3(26.695mm,74.549mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net LED_1_RED_IN Between Pad R302-1(25.55mm,82.219mm) on Top Layer And Pad LED300-4(26.695mm,71.73mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net LED_1_GREEN_IN Between Pad R301-1(27.468mm,82.203mm) on Top Layer And Pad LED300-5(27.595mm,71.73mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net LED_1_BLUE_IN Between Pad LED300-6(28.495mm,71.73mm) on Top Layer And Pad R300-2(29.373mm,82.223mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net LED_2_BLUE_OUT Between Pad LED301-1(21.804mm,76.733mm) on Top Layer And Pad Q301-3(36.13mm,105.461mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net LED_2_GREEN_OUT Between Pad LED301-2(20.904mm,76.733mm) on Top Layer And Pad Q306-3(27.799mm,105.461mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net LED_2_RED_OUT Between Pad Q311-3(19.442mm,105.461mm) on Top Layer [Unplated] And Pad LED301-3(20.004mm,76.733mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net LED_2_RED_IN Between Pad R305-1(14.764mm,78.867mm) on Top Layer And Pad LED301-4(20.004mm,73.914mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net LED_2_GREEN_IN Between Pad R304-1(14.764mm,80.797mm) on Top Layer And Pad LED301-5(20.904mm,73.914mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net LED_2_BLUE_IN Between Pad R303-2(14.779mm,82.728mm) on Top Layer [Unplated] And Pad LED301-6(21.804mm,73.914mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net LED_1_BLUE_OUT Between Pad Q302-3(11.39mm,43.485mm) on Top Layer [Unplated] And Pad LED302-1(20.142mm,58.814mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net LED_3_GREEN_OUT Between Pad Q307-3(11.375mm,35.128mm) on Top Layer [Unplated] And Pad LED302-2(21.042mm,58.814mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net LED_3_RED_OUT Between Pad Q312-3(11.39mm,26.772mm) on Top Layer [Unplated] And Pad LED302-3(21.942mm,58.814mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net LED_3_RED_IN Between Pad R308-1(15.23mm,58.649mm) on Top Layer And Pad LED302-4(21.942mm,61.633mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net LED_3_GREEN_IN Between Pad R307-1(15.23mm,56.718mm) on Top Layer And Pad LED302-5(21.042mm,61.633mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net LED_3_BLUE_IN Between Pad R306-2(15.23mm,54.813mm) on Top Layer [Unplated] And Pad LED302-6(20.142mm,61.633mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net LED_4_BLUE_OUT Between Pad LED303-1(33.553mm,58.532mm) on Top Layer And Pad Q303-3(36.435mm,30.988mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net LED_4_GREEN_OUT Between Pad Q308-3(28.053mm,30.988mm) on Top Layer [Unplated] And Pad LED303-2(34.453mm,58.532mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net LED_4_RED_OUT Between Pad Q313-3(19.671mm,30.988mm) on Top Layer [Unplated] And Pad LED303-3(35.353mm,58.532mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net LED_4_RED_IN Between Pad LED303-4(35.353mm,61.352mm) on Top Layer And Pad R311-1(42.012mm,59.539mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net LED_4_GREEN_IN Between Pad LED303-5(34.453mm,61.352mm) on Top Layer And Pad R310-1(42.003mm,57.583mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net LED_4_BLUE_IN Between Pad LED303-6(33.553mm,61.352mm) on Top Layer And Pad R309-2(42.058mm,55.653mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net LED_5_BLUE_OUT Between Pad LED304-1(35.353mm,76.774mm) on Top Layer And Pad Q304-3(44.455mm,109.601mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net LED_5_GREEN_OUT Between Pad LED304-2(34.453mm,76.774mm) on Top Layer And Pad Q309-3(44.43mm,101.244mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net LED_5_RED_OUT Between Pad LED304-3(33.553mm,76.774mm) on Top Layer And Pad Q314-3(44.41mm,92.888mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net LED_5_RED_IN Between Pad LED304-4(33.553mm,73.954mm) on Top Layer And Pad R314-1(41.175mm,83.326mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net LED_5_GREEN_IN Between Pad LED304-5(34.453mm,73.954mm) on Top Layer And Pad R313-1(41.184mm,81.382mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net LED_5_BLUE_IN Between Pad LED304-6(35.353mm,73.954mm) on Top Layer And Pad R312-2(41.21mm,79.477mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net LED_6_BLUE_OUT Between Pad Q400-3(11.162mm,92.862mm) on Top Layer [Unplated] And Pad LED400-1(23.161mm,69.126mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net LED_6_GREEN_OUT Between Pad Q405-3(11.162mm,101.194mm) on Top Layer [Unplated] And Pad LED400-2(22.261mm,69.126mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net LED_6_RED_OUT Between Pad Q410-3(11.162mm,109.601mm) on Top Layer [Unplated] And Pad LED400-3(21.361mm,69.126mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net LED_6_RED_IN Between Pad R402-1(13.203mm,66.294mm) on Top Layer And Pad LED400-4(21.361mm,66.307mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net LED_6_BLUE_IN Between Pad R401-1(13.203mm,68.224mm) on Top Layer And Pad LED400-5(22.261mm,66.307mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net LED_6_GREEN_IN Between Pad R400-2(13.194mm,70.129mm) on Top Layer [Unplated] And Pad LED400-6(23.161mm,66.307mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net LED_7_BLUE_OUT Between Pad Q401-3(19.645mm,43.637mm) on Top Layer [Unplated] And Pad LED401-1(26.797mm,61.09mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net LED_7_GREEN_OUT Between Pad LED401-2(27.697mm,61.09mm) on Top Layer And Pad Q406-3(28.027mm,43.637mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net LED_7_RED_IN Between Pad LED401-3(28.597mm,61.09mm) on Top Layer And Pad LED401-4(28.597mm,63.91mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net LED_7_RED_IN Between Pad R405-1(25.792mm,52.994mm) on Top Layer And Pad LED401-3(28.597mm,61.09mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net LED_7_BLUE_IN Between Pad LED401-5(27.697mm,63.91mm) on Top Layer And Pad R404-1(27.722mm,52.994mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net LED_7_GREEN_IN Between Pad LED401-6(26.797mm,63.91mm) on Top Layer And Pad R403-2(29.627mm,52.964mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net LED_8_BLUE_OUT Between Pad LED402-1(33.829mm,69.329mm) on Top Layer And Pad Q402-3(44.664mm,43.536mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net LED_8_RED_IN Between Pad LED402-4(32.029mm,66.51mm) on Top Layer And Pad R407-1(39.589mm,70.002mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net LED_8_GREEN_IN Between Pad LED402-5(32.929mm,66.51mm) on Top Layer And Pad R406-1(39.594mm,68.072mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net LED_8_BLUE_IN Between Pad LED402-6(33.829mm,66.51mm) on Top Layer And Pad R409-2(39.564mm,66.167mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net P9_0_LED_RED Between Pad Q301-1(38.416mm,111.86mm) on Top Layer [Unplated] And Pad Q300-1(38.43mm,99.16mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net P9_0_LED_RED Between Pad Q400-1(4.763mm,95.148mm) on Top Layer [Unplated] And Pad Q300-1(38.43mm,99.16mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad Q305-2(25.501mm,99.16mm) on Top Layer [Unplated] And Pad Q300-2(33.858mm,99.16mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net P9_0_LED_RED Between Pad Q301-1(38.416mm,111.86mm) on Top Layer [Unplated] And Pad Q304-1(50.854mm,107.315mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad Q301-2(33.844mm,111.86mm) on Top Layer [Unplated] And Pad Q304-2(50.854mm,111.887mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad Q306-2(25.513mm,111.86mm) on Top Layer [Unplated] And Pad Q301-2(33.844mm,111.86mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net P9_0_LED_RED Between Pad Q400-1(4.763mm,95.148mm) on Top Layer [Unplated] And Pad Q302-1(4.991mm,45.771mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net P9_0_LED_RED Between Pad Q302-1(4.991mm,45.771mm) on Top Layer [Unplated] And Pad Q401-1(17.359mm,37.238mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad Q307-2(4.976mm,32.842mm) on Top Layer [Unplated] And Pad Q302-2(4.991mm,41.199mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad Q400-2(4.763mm,90.576mm) on Top Layer [Unplated] And Pad Q302-2(4.991mm,41.199mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net P9_0_LED_RED Between Pad Q401-1(17.359mm,37.238mm) on Top Layer [Unplated] And Pad Q303-1(34.149mm,24.589mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net P9_0_LED_RED Between Pad Q303-1(34.149mm,24.589mm) on Top Layer [Unplated] And Pad Q402-1(51.063mm,41.25mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net P9_0_LED_RED Between Pad Q303-1(34.149mm,24.589mm) on Top Layer [Unplated] And Pad R201-2(38.749mm,14.926mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad Q308-2(30.339mm,24.589mm) on Top Layer [Unplated] And Pad Q303-2(38.721mm,24.589mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad Q303-2(38.721mm,24.589mm) on Top Layer [Unplated] And Pad R201-1(38.749mm,13.056mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad Q309-2(50.829mm,103.53mm) on Top Layer [Unplated] And Pad Q304-2(50.854mm,111.887mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net P9_1_LED_GREEN Between Pad Q305-1(30.073mm,99.16mm) on Top Layer [Unplated] And Pad Q306-1(30.085mm,111.86mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net P9_1_LED_GREEN Between Pad Q305-1(30.073mm,99.16mm) on Top Layer [Unplated] And Pad Q309-1(50.829mm,98.958mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net P9_1_LED_GREEN Between Pad Q405-1(4.763mm,103.48mm) on Top Layer [Unplated] And Pad Q305-1(30.073mm,99.16mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net P9_1_LED_GREEN Between Pad Q406-1(25.741mm,37.238mm) on Top Layer [Unplated] And Pad Q305-1(30.073mm,99.16mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad Q305-2(25.501mm,99.16mm) on Top Layer [Unplated] And Pad Q306-2(25.513mm,111.86mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad Q310-2(17.119mm,99.16mm) on Top Layer [Unplated] And Pad Q305-2(25.501mm,99.16mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad Q311-2(17.156mm,111.86mm) on Top Layer [Unplated] And Pad Q306-2(25.513mm,111.86mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net P9_1_LED_GREEN Between Pad Q307-1(4.976mm,37.414mm) on Top Layer [Unplated] And Pad Q406-1(25.741mm,37.238mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad Q307-2(4.976mm,32.842mm) on Top Layer [Unplated] And Pad Q312-2(4.991mm,24.486mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net P9_1_LED_GREEN Between Pad Q406-1(25.741mm,37.238mm) on Top Layer [Unplated] And Pad Q308-1(25.767mm,24.589mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad Q313-2(21.957mm,24.589mm) on Top Layer [Unplated] And Pad Q308-2(30.339mm,24.589mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad Q314-2(50.809mm,95.174mm) on Top Layer [Unplated] And Pad Q309-2(50.829mm,103.53mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net P9_2_LED_BLUE Between Pad Q310-1(21.691mm,99.16mm) on Top Layer [Unplated] And Pad Q311-1(21.728mm,111.86mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net P9_2_LED_BLUE Between Pad Q310-1(21.691mm,99.16mm) on Top Layer [Unplated] And Pad Q314-1(50.809mm,90.602mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad Q405-2(4.763mm,98.908mm) on Top Layer [Unplated] And Pad Q310-2(17.119mm,99.16mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net P9_2_LED_BLUE Between Pad Q410-1(4.763mm,111.887mm) on Top Layer [Unplated] And Pad Q311-1(21.728mm,111.86mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net P9_2_LED_BLUE Between Pad Q312-1(4.991mm,29.058mm) on Top Layer [Unplated] And Pad Q313-1(17.385mm,24.589mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad Q312-2(4.991mm,24.486mm) on Top Layer [Unplated] And Pad Q313-2(21.957mm,24.589mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net P9_2_LED_BLUE Between Pad Q313-1(17.385mm,24.589mm) on Top Layer [Unplated] And Pad Q411-1(34.098mm,37.244mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad Q401-2(21.931mm,37.238mm) on Top Layer [Unplated] And Pad Q313-2(21.957mm,24.589mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net P9_2_LED_BLUE Between Pad Q314-1(50.809mm,90.602mm) on Top Layer [Unplated] And Pad Q412-1(51.038mm,24.486mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad Q400-2(4.763mm,90.576mm) on Top Layer [Unplated] And Pad Q405-2(4.763mm,98.908mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad Q401-2(21.931mm,37.238mm) on Top Layer [Unplated] And Pad Q406-2(30.313mm,37.238mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad Q407-2(51.038mm,37.44mm) on Top Layer [Unplated] And Pad Q402-2(51.063mm,45.822mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad Q405-2(4.763mm,98.908mm) on Top Layer [Unplated] And Pad Q410-2(4.763mm,107.315mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net P9_1_LED_GREEN Between Pad Q406-1(25.741mm,37.238mm) on Top Layer [Unplated] And Pad Q407-1(51.038mm,32.868mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad Q406-2(30.313mm,37.238mm) on Top Layer [Unplated] And Pad Q411-2(38.67mm,37.244mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net P9_1_LED_GREEN Between Pad R203-2(49.682mm,14.926mm) on Top Layer And Pad Q407-1(51.038mm,32.868mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad Q411-2(38.67mm,37.244mm) on Top Layer [Unplated] And Pad Q407-2(51.038mm,37.44mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad Q412-2(51.038mm,29.058mm) on Top Layer [Unplated] And Pad Q407-2(51.038mm,37.44mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net P9_2_LED_BLUE Between Pad Q411-1(34.098mm,37.244mm) on Top Layer [Unplated] And Pad Q412-1(51.038mm,24.486mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net LED_7_RED_IN Between Pad R405-1(25.792mm,52.994mm) on Top Layer And Pad Q411-3(36.384mm,43.643mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net P9_2_LED_BLUE Between Pad R202-2(44.216mm,14.926mm) on Top Layer And Pad Q412-1(51.038mm,24.486mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net 5.0V Between Pad R403-1(29.627mm,54.864mm) on Top Layer [Unplated] And Pad R200-2(32.614mm,15.408mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net 5.0V Between Pad R200-2(32.614mm,15.408mm) on Top Layer And Pad TP200-1(43.078mm,6.883mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad R201-1(38.749mm,13.056mm) on Top Layer And Pad R202-1(44.216mm,13.056mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad R202-1(44.216mm,13.056mm) on Top Layer And Pad R203-1(49.682mm,13.056mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net 5.0V Between Pad R301-2(27.468mm,80.333mm) on Top Layer And Pad R300-1(29.373mm,80.323mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net 5.0V Between Pad R300-1(29.373mm,80.323mm) on Top Layer [Unplated] And Pad R312-1(39.31mm,79.477mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net 5.0V Between Pad R302-2(25.55mm,80.349mm) on Top Layer And Pad R301-2(27.468mm,80.333mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net 5.0V Between Pad R303-1(12.879mm,82.728mm) on Top Layer [Unplated] And Pad R304-2(12.894mm,80.797mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net 5.0V Between Pad R305-2(12.894mm,78.867mm) on Top Layer And Pad R304-2(12.894mm,80.797mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net 5.0V Between Pad R305-2(12.894mm,78.867mm) on Top Layer And Pad R400-1(15.094mm,70.129mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net 5.0V Between Pad R306-1(13.33mm,54.813mm) on Top Layer [Unplated] And Pad R307-2(13.36mm,56.718mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net 5.0V Between Pad R306-1(13.33mm,54.813mm) on Top Layer [Unplated] And Pad R405-2(25.792mm,54.864mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net 5.0V Between Pad R307-2(13.36mm,56.718mm) on Top Layer And Pad R308-2(13.36mm,58.649mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net 5.0V Between Pad R308-2(13.36mm,58.649mm) on Top Layer And Pad R402-2(15.073mm,66.294mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net 5.0V Between Pad R310-2(40.133mm,57.583mm) on Top Layer And Pad R309-1(40.158mm,55.653mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net 5.0V Between Pad R403-1(29.627mm,54.864mm) on Top Layer [Unplated] And Pad R309-1(40.158mm,55.653mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net 5.0V Between Pad R310-2(40.133mm,57.583mm) on Top Layer And Pad R311-2(40.142mm,59.539mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net 5.0V Between Pad R311-2(40.142mm,59.539mm) on Top Layer And Pad R409-1(41.464mm,66.167mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net 5.0V Between Pad R312-1(39.31mm,79.477mm) on Top Layer [Unplated] And Pad R313-2(39.314mm,81.382mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net 5.0V Between Pad R312-1(39.31mm,79.477mm) on Top Layer [Unplated] And Pad R407-2(41.459mm,70.002mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net 5.0V Between Pad R314-2(39.305mm,83.326mm) on Top Layer And Pad R313-2(39.314mm,81.382mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net 5.0V Between Pad R401-2(15.073mm,68.224mm) on Top Layer And Pad R400-1(15.094mm,70.129mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net 5.0V Between Pad R402-2(15.073mm,66.294mm) on Top Layer And Pad R401-2(15.073mm,68.224mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net 5.0V Between Pad R404-2(27.722mm,54.864mm) on Top Layer And Pad R403-1(29.627mm,54.864mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net 5.0V Between Pad R405-2(25.792mm,54.864mm) on Top Layer And Pad R404-2(27.722mm,54.864mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net 5.0V Between Pad R407-2(41.459mm,70.002mm) on Top Layer And Pad R406-2(41.464mm,68.072mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net 5.0V Between Pad R409-1(41.464mm,66.167mm) on Top Layer [Unplated] And Pad R406-2(41.464mm,68.072mm) on Top Layer 
-Rule Violations :129
+Rule Violations :0
 
 Processing Rule : Width Constraint (Min=0.1mm) (Max=12mm) (Preferred=0.254mm) (All)
 Rule Violations :0
@@ -178,6 +49,6 @@ Processing Rule : Height Constraint (Min=0mm) (Max=22mm) (Prefered=12.7mm) (All)
 Rule Violations :0
 
 
-Violations Detected : 129
+Violations Detected : 0
 Waived Violations : 0
-Time Elapsed        : 00:00:02
+Time Elapsed        : 00:00:01

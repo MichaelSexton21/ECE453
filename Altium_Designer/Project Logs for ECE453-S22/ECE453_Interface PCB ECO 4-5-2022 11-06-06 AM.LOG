@@ -1,0 +1,21 @@
+Change Footprint: Footprint Not Found RESC2012X65N
+Added Component: Designator=D201(LEDSC160X320X90-2N)
+Add component (AddParameter): Name = "Digi-Key_Part_Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Purchase_URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Dialight"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "598-8220-107F"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "1206 Dialight"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/598-8220-107F/Dialight/view-part/454138/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R201(RESC2012X65N)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1625868-6"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=D201-C
+Added Pin To Net: NetName=3.3V_MCU Pin=R201-2
+Added Pin To Net: NetName=NetD201_A Pin=D201-A
+Added Pin To Net: NetName=NetD201_A Pin=R201-1
+Added Net: Name=NetD201_A

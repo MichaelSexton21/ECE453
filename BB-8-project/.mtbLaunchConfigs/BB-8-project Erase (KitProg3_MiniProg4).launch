@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="ilg.gnumcueclipse.debug.gdbjtag.openocd.launchConfigurationType">
+<booleanAttribute key="com.cypress.studio.launch.hide" value="true"/>
 <stringAttribute key="com.cypress.studio.launch.mode" value="run"/>
 <booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.doContinue" value="false"/>
 <booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.doDebugInRam" value="false"/>
@@ -17,12 +18,12 @@
 <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.gdbServerExecutable" value="${openocd_path}/${openocd_executable}"/>
 <intAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.gdbServerGdbPortNumber" value="3333"/>
 <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.gdbServerLog" value=""/>
-<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.gdbServerOther" value="-s &quot;${openocd_path}/../scripts&quot;&#13;&#10;-s &quot;./libs/TARGET_CY8CPROTO-063-BLE/COMPONENT_BSP_DESIGN_MODUS/GeneratedSource&quot;&#13;&#10;-c &quot;source [find interface/kitprog3.cfg]&quot;&#13;&#10;-c &quot;source [find target/psoc6.cfg]&quot;&#13;&#10;-c &quot;psoc6 sflash_restrictions 1&quot;&#13;&#10;-c &quot;if [catch {program ${cy_prj_path}/build/CY8CPROTO-063-BLE/Debug/mtb-example-psoc6-ble-battery-level-freertos.hex} ] { echo {** Program operation failed **} } else { echo {** Program operation completed successfully **} }&quot;&#13;&#10;-c &quot;reset_config srst_only;reset run;psoc6.dap dpreg 0x04 0x00;shutdown&quot;"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.gdbServerOther" value="-s &quot;${openocd_path}/../scripts&quot;&#13;&#10;-c &quot;source [find interface/kitprog3.cfg]&quot;&#13;&#10;-c &quot;source [find target/psoc6.cfg]&quot;&#13;&#10;-c &quot;init; reset init; psoc6 sflash_restrictions 1&quot;&#13;&#10;-c &quot;if [catch {erase_all} ] { echo {** Erase operation failed **} } else { echo {** Erase operation completed successfully **} }&quot;&#13;&#10;-c &quot;shutdown&quot;"/>
 <intAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.gdbServerTelnetPortNumber" value="4444"/>
 <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.otherInitCommands" value=""/>
 <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.otherRunCommands" value=""/>
 <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.secondResetType" value="run"/>
-<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.svdPath" value=""/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.svdPath" value="${cy_prj_path}/../mtb_shared/mtb-pdl-cat1/release-v2.4.0/devices/COMPONENT_CAT1A/svd/psoc6_01.svd"/>
 <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.imageFileName" value=""/>
 <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.imageOffset" value=""/>
 <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.ipAddress" value="localhost"/>
@@ -46,16 +47,13 @@
 <booleanAttribute key="org.eclipse.cdt.dsf.gdb.UPDATE_THREADLIST_ON_SUSPEND" value="false"/>
 <intAttribute key="org.eclipse.cdt.launch.ATTR_BUILD_BEFORE_LAUNCH_ATTR" value="2"/>
 <stringAttribute key="org.eclipse.cdt.launch.COREFILE_PATH" value=""/>
-<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="${cy_prj_path}/build/CY8CPROTO-063-BLE/Debug/mtb-example-psoc6-ble-battery-level-freertos.hex"/>
-<stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="BB8"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="${cy_prj_path}/build/CY8CPROTO-063-BLE/Debug/mtb-example-psoc6-empty-app.hex"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="BB-8-project"/>
 <booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="true"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/BB8"/>
+<listEntry value="/BB-8-project"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="4"/>
-</listAttribute>
-<listAttribute key="org.eclipse.debug.ui.favoriteGroups">
-<listEntry value="org.eclipse.debug.ui.launchGroup.run"/>
 </listAttribute>
 </launchConfiguration>

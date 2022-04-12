@@ -85,6 +85,8 @@
 #define BLE_QUEUE_LENGTH            (10u)
 #define STATUS_LED_QUEUE_LENGTH     (1u)
 
+lvhb_drv_config_t drvConfig;
+
 /*******************************************************************************
  * Function Name: main
  ********************************************************************************
@@ -101,7 +103,7 @@ int main(void) {
 	BaseType_t rtos_api_result = pdPASS;
 
 	///////////// Motor interface config //////////////////////////////////////////////////
-	lvhb_drv_config_t drvConfig;
+
 	cyhal_pwm_t pwm_obj_motor1;
 	cyhal_pwm_t pwm_obj_motor2;
 
@@ -153,18 +155,25 @@ int main(void) {
 	drvConfig.tmrLvhbConfig.prescale = tmrPrescDiv_8;
 	drvConfig.tmrLvhbConfig.srcClck_Hz = CLOCK_GetFreq(kCLOCK_BusClk);
 
-	/* Pins */
+	/* Configure Pins with GPIO/PWM */
 	drvConfig.inputPins[lvhbBridge1] = lvhbPinsGpioPwm; /* IN1A (GPIO) + IN1B (PWM) */
 	drvConfig.inxaPinInstance[lvhbBridge1] = instanceA; /* IN1A - PTA2/FTM0_CH7 */
-	drvConfig.inxaPinIndex[lvhbBridge1] = 2U;
+	drvConfig.inxaPinIndex[lvhbBridge1] = MOTOR1_INA;
 	drvConfig.tmrLvhbConfig.inxbChannelNumber[lvhbBridge1] = 1; /* IN1B - PTC2/FTM0_CH1 */
 
 	drvConfig.inputPins[lvhbBridge2] = lvhbPinsGpioPwm; /* IN2A (GPIO) + IN2B (PWM) */
 	drvConfig.inxaPinInstance[lvhbBridge2] = instanceC; /* IN2A - PTC12 */
-	drvConfig.inxaPinIndex[lvhbBridge2] = 12U;
+	drvConfig.inxaPinIndex[lvhbBridge2] = MOTOR2_INA;
+	drvConfig.tmrLvhbConfig.inxbChannelNumber[lvhbBridge2] = 1; /* IN1B - PTC2/FTM0_CH1 */
 
-	drvConfig.inxbPinInstance[lvhbBridge2] = instanceC; /* IN2B - PTC4/FTM0_CH3 */
-	drvConfig.inxbPinIndex[lvhbBridge2] = 4U;
+	if ((LVHB_ConfigureGpio(&drvConfig) != kStatus_Success) ||
+        (LVHB_ConfigureTimer(&drvConfig, NULL) != kStatus_Success) ||
+        (LVHB_Init(&drvConfig) != kStatus_Success))
+	{
+			PRINTF("An error occurred during initialization.\r\n");
+	}
+
+
 
 	///////////// Motor interface config //////////////////////////////////////////////////
 
@@ -217,6 +226,10 @@ int main(void) {
 	TASK_BATTERY_PRIORITY, NULL);
 
 	rtos_api_result |= xTaskCreate(task_ece453_led, "ECE453 LED TASK", 256,
+	NULL, 1,
+	NULL);
+
+	rtos_api_result |= xTaskCreate(task_bb8_motor, "BB8 MOTOR TASK", 256,
 	NULL, 1,
 	NULL);
 
@@ -278,4 +291,3 @@ void vApplicationMallocFailedHook(void) {
 }
 
 /* [] END OF FILE */
-

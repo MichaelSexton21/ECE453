@@ -53,9 +53,10 @@
 #include "status_led_task.h"
 #include "uart_debug.h"
 #include "ece453_led_task.h"
-#include "bb8_motor_task.h"
 
 //Motor Driver Includes
+#include "lvhb/lvhb.h"
+#include "aml/wait_aml/wait_aml.h"
 #include "motor.h"
 
 /*******************************************************************************
@@ -84,6 +85,7 @@
 #define BLE_QUEUE_LENGTH            (10u)
 #define STATUS_LED_QUEUE_LENGTH     (1u)
 
+lvhb_drv_config_t drvConfig;
 
 /*******************************************************************************
  * Function Name: main
@@ -100,7 +102,7 @@ int main(void) {
 	cy_rslt_t result = CY_RSLT_SUCCESS;
 	BaseType_t rtos_api_result = pdPASS;
 
-	/////////////////////////////////////// Motor interface config //////////////////////////////////////////////////
+	///////////// Motor interface config //////////////////////////////////////////////////
 
 	cyhal_pwm_t pwm_obj_motor1;
 	cyhal_pwm_t pwm_obj_motor2;
@@ -138,11 +140,42 @@ int main(void) {
 			CYHAL_GPIO_DRIVE_STRONG,    // Drive Mode
 			true);
 
-	/* Driver config. */
+	/* Fill LVHB driver config. */
+	LVHB_GetDefaultConfig(&drvConfig, lvhbDeviceMPC17529, lvhbMotorBrushed);
+
+	drvConfig.deviceConfig.brushPwmFrequency = 10000;
+	drvConfig.deviceConfig.secondaryBridgeUsed = true;
+	drvConfig.deviceConfig.motorType = lvhbMotorBrushed;
+
+	//drvConfig.enPinIndex = MOTOR_OEn; - maybe we don't need this?
+
+	/* Timer settings - #TODO */
+	drvConfig.tmrInstance = 0; /* FTM0 */
+	drvConfig.tmrLvhbConfig.counterWidth = 16;
+	drvConfig.tmrLvhbConfig.prescale = tmrPrescDiv_8;
+	drvConfig.tmrLvhbConfig.srcClck_Hz = CLOCK_GetFreq(kCLOCK_BusClk);
+
+	/* Configure Pins with GPIO/PWM */
+	drvConfig.inputPins[lvhbBridge1] = lvhbPinsGpioPwm; /* IN1A (GPIO) + IN1B (PWM) */
+	drvConfig.inxaPinInstance[lvhbBridge1] = instanceA; /* IN1A - PTA2/FTM0_CH7 */
+	drvConfig.inxaPinIndex[lvhbBridge1] = MOTOR1_INA;
+	drvConfig.tmrLvhbConfig.inxbChannelNumber[lvhbBridge1] = 1; /* IN1B - PTC2/FTM0_CH1 */
+
+	drvConfig.inputPins[lvhbBridge2] = lvhbPinsGpioPwm; /* IN2A (GPIO) + IN2B (PWM) */
+	drvConfig.inxaPinInstance[lvhbBridge2] = instanceC; /* IN2A - PTC12 */
+	drvConfig.inxaPinIndex[lvhbBridge2] = MOTOR2_INA;
+	drvConfig.tmrLvhbConfig.inxbChannelNumber[lvhbBridge2] = 1; /* IN1B - PTC2/FTM0_CH1 */
+
+	if ((LVHB_ConfigureGpio(&drvConfig) != kStatus_Success) ||
+        (LVHB_ConfigureTimer(&drvConfig, NULL) != kStatus_Success) ||
+        (LVHB_Init(&drvConfig) != kStatus_Success))
+	{
+			PRINTF("An error occurred during initialization.\r\n");
+	}
 
 
 
-	/////////////////////////////////////// Motor interface config //////////////////////////////////////////////////
+	///////////// Motor interface config //////////////////////////////////////////////////
 
 
 	/* Initialize the device and board peripherals */
@@ -196,7 +229,7 @@ int main(void) {
 	NULL, 1,
 	NULL);
 
-	rtos_api_result |= xTaskCreate(bb8_motor_task, "BB8 MOTOR TASK", 256,
+	rtos_api_result |= xTaskCreate(task_bb8_motor, "BB8 MOTOR TASK", 256,
 	NULL, 1,
 	NULL);
 
@@ -258,3 +291,4 @@ void vApplicationMallocFailedHook(void) {
 }
 
 /* [] END OF FILE */
+

@@ -2,17 +2,14 @@
  * Header file includes
  ******************************************************************************/
 #include "bb8_motor_task.h"
-#include "queue.h"
-#include "cyhal_hw_types.h"
-#include "motor.h"
+#include "lvhb.h"
 
 #define MAX_SPEED 20 //20% is 'speed on'
 
 /* Queue handle used for commands */
 QueueHandle_t bb8_motor_data_q;
-int INA1, INA2; // current status of INA for motors - gpio ... 1 = forward, 0 = backwards
 
-void bb8_motor_task(void *param){
+void task_bb8_motor(void *param){
 
 	cy_rslt_t rslt;
 
@@ -40,9 +37,8 @@ void bb8_motor_task(void *param){
 
   // Start assuming forward (in case of initial turns)
 	bb8_motor_data_t buffer;
-//  LVHB_SetDirection(drvConfig, true, lvhbBridge1);
-//  LVHB_SetDirection(drvConfig, true, lvhbBridge2);
-
+  LVHB_SetDirection(drvConfig, true, lvhbBridge1);
+  LVHB_SetDirection(drvConfig, true, lvhbBridge2);
 
   // initialize speeds to zero
   int curLeftSpeed = 0;
@@ -59,56 +55,36 @@ void bb8_motor_task(void *param){
       // if user is not pressing any controls, then gradually slow the robot down
       // rather than abruptly stopping the wheels
       if (buffer.up == 0 && buffer.down == 0 && buffer.left == 0 && buffer.right == 0) {
-    	  // prevent speed from going negative
-    	  if (curLeftSpeed >= 2) {
-    	        curLeftSpeed -= 2;
-    	  }
-
-    	  if (curRightSpeed >= 2) {
-    	        curRightSpeed -= 2;
-    	  }
+        curLeftSpeed -= 2;
+        curRightSpeed -= 2;
       }
 
-    	xQueueReceive(bb8_motor_data_q, &buffer, portMAX_DELAY);
+    	xQueueReceive(ece453_led_data_q, &buffer, portMAX_DELAY);
 
       // Are we back or forward
-    	if(buffer.up == 1 && buffer.down == 0){ // forwards
-//        LVHB_SetDirection(drvConfig, true, lvhbBridge1);
-//        LVHB_SetDirection(drvConfig, true, lvhbBridge2);
-    		INA1 = 1;
-    		INA2 = 1;
-			curLeftSpeed = MAX_SPEED;
-			curRightSpeed = MAX_SPEED;
+    	if(buffer.up == 1 && buffer.down == 0){
+        LVHB_SetDirection(drvConfig, true, lvhbBridge1);
+        LVHB_SetDirection(drvConfig, true, lvhbBridge2);
+        curLeftSpeed = MAX_SPEED;
+        curRightSpeed = MAX_SPEED;
     	}
-    	else if(buffer.down == 1 && buffer.up == 0){ // backwards
-//    		LVHB_SetDirection(drvConfig, false, lvhbBridge1);
-//        LVHB_SetDirection(drvConfig, false, lvhbBridge2);
-    		INA1 = 0;
-    		INA2 = 0;
-			curLeftSpeed = MAX_SPEED;
-			curRightSpeed = MAX_SPEED;
+    	else if(buffer.down == 1 && buffer.up == 0){
+    		LVHB_SetDirection(drvConfig, false, lvhbBridge1);
+        LVHB_SetDirection(drvConfig, false, lvhbBridge2);
+        curLeftSpeed = MAX_SPEED;
+        curRightSpeed = MAX_SPEED;
     	}
 
-    	// Are we left or right
-    	if(buffer.left == 1 && buffer.right == 0){ // purely left
-    		// slowly decrease left wheel to turn left
-    		if (curLeftSpeed >= 2) {
-    			curLeftSpeed -= 2;
-    		}
-
-    		curRightSpeed += 20;
+      // Are we left or right
+    	if(buffer.left == 1 && buffer.right == 0){
+        curRightSpeed += 20;
     	}
-    	else if(buffer.right == 1 && buffer.left == 0){ // purely right
-    		// slowly decrease right wheel to turn right
-    		if (curRightSpeed >= 2) {
-    			curRightSpeed -= 2;
-    		}
-
-    		curLeftSpeed += 20;
+    	else if(buffer.right == 1 && buffer.left == 0){
+        curLeftSpeed += 20;
     	}
 
-//      LVHB_RotateProportional(drvConfig, curLeftSpeed, lvhbBridge1);
-//      LVHB_RotateProportional(drvConfig, curRightSpeed, lvhbBridge2);
+      LVHB_RotateProportional(drvConfig, curLeftSpeed, lvhbBridge1);
+      LVHB_RotateProportional(drvConfig, curRightSpeed, lvhbBridge2);
 
       /* Cases:
        * UP ONLY: L and R FORWARDS
@@ -123,11 +99,11 @@ void bb8_motor_task(void *param){
        * LEFT/RIGHT: NOTHING
        */ 
 
+
+
+        
     }
+
+
+
 }
-
-void changeDirection() {
-	if (INA1 == )
-}
-
-

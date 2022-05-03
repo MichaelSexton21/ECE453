@@ -1,8 +1,8 @@
-15:03:28 **** Incremental Build of configuration Debug for project Lab2 ****
+11:12:05 **** Incremental Build of configuration Debug for project Lab2 ****
 "C:\\Infineon\\Tools\\ModusToolbox\\tools_2.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_MAKE_IDE_VERSION=2.4 CY_IDE_TOOLS_DIR=C:/Infineon/Tools/ModusToolbox/tools_2.4 -j6 all 
 Tools Directory: C:/Infineon/Tools/ModusToolbox/tools_2.4
 CY8CPROTO-063-BLE.mk: ./libs/TARGET_CY8CPROTO-063-BLE/CY8CPROTO-063-BLE.mk
-Log file= "C:/Users/ECE_STUDENT/AppData/Local/Temp/device-configurator-cli/device-configurator-cli-20220227.150329.076-9056.log"
+Log file= "C:/Users/ECE_STUDENT/AppData/Local/Temp/device-configurator-cli/device-configurator-cli-20220502.111206.710-1184.log"
 Command line= "C:/Infineon/Tools/ModusToolbox/tools_2.4/device-configurator/device-configurator-cli.exe --library ../mtb_shared/mtb-pdl-cat1/release-v2.3.1/devicesupport.xml --build ./libs/TARGET_CY8CPROTO-063-BLE/COMPONENT_BSP_DESIGN_MODUS/design.modus --check-mcu=CYBLE-416045-02 --check-coprocessors= --readonly --skip-build"
 
 Prebuild operations complete
@@ -65,5 +65,5 @@ Calculating memory consumption: CYBLE-416045-02 GCC_ARM -Og
 
   
 
-15:03:31 Build Finished. 0 errors, 0 warnings. (took 3s.484ms)
+11:12:12 Build Finished. 0 errors, 0 warnings. (took 7s.27ms)
 

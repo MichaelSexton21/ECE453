@@ -20,29 +20,29 @@ RM := rm -rf
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
-ifneq ($(strip $(C++_DEPS)),)
--include $(C++_DEPS)
-endif
-ifneq ($(strip $(C_DEPS)),)
--include $(C_DEPS)
-endif
-ifneq ($(strip $(ASM_DEPS)),)
--include $(ASM_DEPS)
-endif
 ifneq ($(strip $(CC_DEPS)),)
 -include $(CC_DEPS)
 endif
-ifneq ($(strip $(CPP_DEPS)),)
--include $(CPP_DEPS)
-endif
-ifneq ($(strip $(CXX_DEPS)),)
--include $(CXX_DEPS)
+ifneq ($(strip $(C++_DEPS)),)
+-include $(C++_DEPS)
 endif
 ifneq ($(strip $(C_UPPER_DEPS)),)
 -include $(C_UPPER_DEPS)
 endif
+ifneq ($(strip $(CXX_DEPS)),)
+-include $(CXX_DEPS)
+endif
+ifneq ($(strip $(ASM_DEPS)),)
+-include $(ASM_DEPS)
+endif
 ifneq ($(strip $(S_UPPER_DEPS)),)
 -include $(S_UPPER_DEPS)
+endif
+ifneq ($(strip $(C_DEPS)),)
+-include $(C_DEPS)
+endif
+ifneq ($(strip $(CPP_DEPS)),)
+-include $(CPP_DEPS)
 endif
 endif
 
@@ -50,43 +50,42 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 SECONDARY_FLASH += \
-LVHB_FRDM-K64F_MPC17510_Brush.hex \
+LVHB_K64F_17510EJ-EVB_Brush.hex \
 
 SECONDARY_SIZE += \
-LVHB_FRDM-K64F_MPC17510_Brush.siz \
+LVHB_K64F_17510EJ-EVB_Brush.siz \
 
 
 # All Target
-all: LVHB_FRDM-K64F_MPC17510_Brush.elf secondary-outputs
+all: LVHB_K64F_17510EJ-EVB_Brush.elf secondary-outputs
 
 # Tool invocations
-LVHB_FRDM-K64F_MPC17510_Brush.elf: $(OBJS) $(USER_OBJS)
+LVHB_K64F_17510EJ-EVB_Brush.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cross ARM C++ Linker'
-	arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -flto  -g3 -T "../MK64FN1M0xxx12_flash.ld" -Xlinker --gc-sections -Wl,-Map,"LVHB_FRDM-K64F_MPC17510_Brush.map" --specs=nano.specs -specs=nosys.specs -Xlinker -z -Xlinker muldefs -o "LVHB_FRDM-K64F_MPC17510_Brush.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -flto  -g3 -T "../MK64FN1M0xxx12_flash.ld" -Xlinker --gc-sections -Wl,-Map,"LVHB_K64F_17510EJ-EVB_Brush.map" --specs=nano.specs -specs=nosys.specs -Xlinker -z -Xlinker muldefs -o "LVHB_K64F_17510EJ-EVB_Brush.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-LVHB_FRDM-K64F_MPC17510_Brush.hex: LVHB_FRDM-K64F_MPC17510_Brush.elf
+LVHB_K64F_17510EJ-EVB_Brush.hex: LVHB_K64F_17510EJ-EVB_Brush.elf
 	@echo 'Invoking: Cross ARM GNU Create Flash Image'
-	arm-none-eabi-objcopy -O ihex "LVHB_FRDM-K64F_MPC17510_Brush.elf"  "LVHB_FRDM-K64F_MPC17510_Brush.hex"
+	arm-none-eabi-objcopy -O ihex "LVHB_K64F_17510EJ-EVB_Brush.elf"  "LVHB_K64F_17510EJ-EVB_Brush.hex"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-LVHB_FRDM-K64F_MPC17510_Brush.siz: LVHB_FRDM-K64F_MPC17510_Brush.elf
+LVHB_K64F_17510EJ-EVB_Brush.siz: LVHB_K64F_17510EJ-EVB_Brush.elf
 	@echo 'Invoking: Cross ARM GNU Print Size'
-	arm-none-eabi-size --format=berkeley "LVHB_FRDM-K64F_MPC17510_Brush.elf"
+	arm-none-eabi-size --format=berkeley "LVHB_K64F_17510EJ-EVB_Brush.elf"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(SECONDARY_SIZE)$(C++_DEPS)$(OBJS)$(C_DEPS)$(ASM_DEPS)$(CC_DEPS)$(SECONDARY_FLASH)$(CPP_DEPS)$(CXX_DEPS)$(C_UPPER_DEPS)$(S_UPPER_DEPS) LVHB_FRDM-K64F_MPC17510_Brush.elf
+	-$(RM) $(CC_DEPS)$(C++_DEPS)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(SECONDARY_FLASH)$(SECONDARY_SIZE)$(ASM_DEPS)$(S_UPPER_DEPS)$(C_DEPS)$(CPP_DEPS) LVHB_K64F_17510EJ-EVB_Brush.elf
 	-@echo ' '
 
 secondary-outputs: $(SECONDARY_FLASH) $(SECONDARY_SIZE)
 
 .PHONY: all clean dependents
-.SECONDARY:
 
 -include ../makefile.targets

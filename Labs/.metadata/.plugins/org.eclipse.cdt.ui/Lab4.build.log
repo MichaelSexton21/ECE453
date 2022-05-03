@@ -1,4 +1,4 @@
-16:54:47 **** Incremental Build of configuration Debug for project Lab4 ****
+11:12:12 **** Incremental Build of configuration Debug for project Lab4 ****
 "C:\\Infineon\\Tools\\ModusToolbox\\tools_2.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_MAKE_IDE_VERSION=2.4 CY_IDE_TOOLS_DIR=C:/Infineon/Tools/ModusToolbox/tools_2.4 -j6 all 
 Tools Directory: C:/Infineon/Tools/ModusToolbox/tools_2.4
 CY8CPROTO-063-BLE.mk: ./libs/TARGET_CY8CPROTO-063-BLE/CY8CPROTO-063-BLE.mk
@@ -12,10 +12,10 @@ CY8CPROTO-063-BLE.mk: ./libs/TARGET_CY8CPROTO-063-BLE/CY8CPROTO-063-BLE.mk
 Initializing build: mtb-example-psoc6-ble-battery-level-freertos Debug CY8CPROTO-063-BLE GCC_ARM
 
 Auto-discovery in progress...
--> Found 227 .c file(s)
+-> Found 228 .c file(s)
 -> Found 46 .S file(s)
 -> Found 23 .s file(s)
--> Found 0 .cpp file(s)
+-> Found 1 .cpp file(s)
 -> Found 0 .o file(s)
 -> Found 26 .a file(s)
 -> Found 520 .h file(s)
@@ -25,6 +25,8 @@ Applying filters...
 Auto-discovery complete
 
 Constructing build rules...
+libs/psoc6make/make/core/build.mk:375: warning: overriding recipe for target 'C:/Users/ECE_STUDENT/Documents/ECE453/Labs/Lab4/build/CY8CPROTO-063-BLE/Debug/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+libs/psoc6make/make/core/build.mk:375: warning: ignoring old recipe for target 'C:/Users/ECE_STUDENT/Documents/ECE453/Labs/Lab4/build/CY8CPROTO-063-BLE/Debug/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
 Build rules construction complete
 
 ==============================================================================
@@ -33,9 +35,7 @@ Build rules construction complete
 Generating compilation database file...
 -> ./build/compile_commands.json
 Compilation database file generation complete
-Building 215 file(s)
-Compiling source/ble_task.c -DCY_USING_HAL -DCY_APPNAME_mtb_example_psoc6_ble_battery_level_freertos -DCYBLE_416045_02 -DCY_TARGET_DEVICE=CYBLE_416045_02 -DTARGET_CY8CPROTO_063_BLE -DCY_TARGET_BOARD=CY8CPROTO_063_BLE -DCOMPONENT_BLESS_CONTROLLER -DCOMPONENT_BLESS_HOST -DCOMPONENT_BSP_DESIGN_MODUS -DCOMPONENT_CM0P_SLEEP -DCOMPONENT_CM4 -DCOMPONENT_PSOC6HAL -DCOMPONENT_SOFTFP -DDEBUG  -I. -I./GeneratedSource -I./libs -I./libs/TARGET_CY8CPROTO-063-BLE -I./libs/TARGET_CY8CPROTO-063-BLE/COMPONENT_BSP_DESIGN_MODUS -I./libs/TARGET_CY8CPROTO-063-BLE/COMPONENT_BSP_DESIGN_MODUS/GeneratedSource -I./libs/bless -I./libs/bless/common -I./libs/core-lib -I./libs/core-lib/include -I./libs/freertos -I./libs/freertos/Source -I./libs/freertos/Source/include -I./libs/freertos/Source/portable -I./libs/freertos/Source/portable/TOOLCHAIN_GCC_ARM -I./libs/freertos/Source/portable/TOOLCHAIN_GCC_ARM/CM4F -I./libs/psoc6hal -I./libs/psoc6hal/COMPONENT_PSOC6HAL -I./libs/psoc6hal/COMPONENT_PSOC6HAL/include -I./libs/psoc6hal/COMPONENT_PSOC6HAL/include/pin_packages -I./libs/psoc6hal/COMPONENT_PSOC6HAL/include/triggers -I./libs/psoc6hal/include -I./libs/psoc6pdl -I./libs/psoc6pdl/cmsis -I./libs/psoc6pdl/cmsis/include -I./libs/psoc6pdl/devices -I./libs/psoc6pdl/devices/include -I./libs/psoc6pdl/devices/include/ip -I./libs/psoc6pdl/drivers -I./libs/psoc6pdl/drivers/include -I./libs/retarget-io -I./source
-    Linking output file mtb-example-psoc6-ble-battery-level-freertos.elf
+Building 217 file(s)
 ==============================================================================
 = Build complete =
 ==============================================================================
@@ -1843,5 +1843,5 @@ Calculating memory consumption: CYBLE-416045-02 GCC_ARM -Og
 
   
 
-16:54:52 Build Finished. 0 errors, 0 warnings. (took 4s.853ms)
+11:12:20 Build Finished. 0 errors, 2 warnings. (took 7s.737ms)
 

@@ -2,46 +2,15 @@
  * File Name: main.c
  *
  * Description: This is the source code for the PSoC 6 MCU with BLE
- *              Connectivity: Battery Level (FreeRTOS) Example for ModusToolbox.
  *
- * Related Document: See README.md
+ * Authors: Emily Cebasek, Mya Schmitz, Michael Sexton, Anna Stephan
  *
- *******************************************************************************
- * (c) 2019-2020, Cypress Semiconductor Corporation. All rights reserved.
- *******************************************************************************
- * This software, including source code, documentation and related materials
- * ("Software"), is owned by Cypress Semiconductor Corporation or one of its
- * subsidiaries ("Cypress") and is protected by and subject to worldwide patent
- * protection (United States and foreign), United States copyright laws and
- * international treaty provisions. Therefore, you may use this Software only
- * as provided in the license agreement accompanying the software package from
- * which you obtained this Software ("EULA").
- *
- * If no EULA applies, Cypress hereby grants you a personal, non-exclusive,
- * non-transferable license to copy, modify, and compile the Software source
- * code solely for use in connection with Cypress's integrated circuit products.
- * Any reproduction, modification, translation, compilation, or representation
- * of this Software except as specified above is prohibited without the express
- * written permission of Cypress.
- *
- * Disclaimer: THIS SOFTWARE IS PROVIDED AS-IS, WITH NO WARRANTY OF ANY KIND,
- * EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, NONINFRINGEMENT, IMPLIED
- * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. Cypress
- * reserves the right to make changes to the Software without notice. Cypress
- * does not assume any liability arising out of the application or use of the
- * Software or any product or circuit described in the Software. Cypress does
- * not authorize its products for use in any products where a malfunction or
- * failure of the Cypress product may reasonably be expected to result in
- * significant property damage, injury or death ("High Risk Product"). By
- * including Cypress's product in a High Risk Product, the manufacturer of such
- * system or application assumes all risk of such use and in doing so agrees to
- * indemnify Cypress against all liability.
- *******************************************************************************/
-
-/*******************************************************************************
+/***************                                                                                                                                                                                                                               ***************************************************************
  * Header files
  ******************************************************************************/
-#include <ece453_led_task.h>
+#include <buzzer_task.h>
+#include <led_task.h>
+#include <motor_task.h>
 #include "cyhal.h"
 #include "cybsp.h"
 #include "cy_retarget_io.h"
@@ -52,11 +21,13 @@
 #include "battery_task.h"
 #include "status_led_task.h"
 #include "uart_debug.h"
-#include "ece453_led_task.h"
-#include "bb8_motor_task.h"
 
-//Motor Driver Includes
-#include "motor.h"
+//PWM for motors & buzzer
+
+cyhal_pwm_t pwm_obj_motor1;
+cyhal_pwm_t pwm_obj_motor2;
+
+cyhal_pwm_t pwm_obj_buzzer;
 
 /*******************************************************************************
  * Macros
@@ -65,9 +36,13 @@
  * priority is 0 to ( configMAX_PRIORITIES - 1 ), where configMAX_PRIORITIES is
  * defined within FreeRTOSConfig.h. Higher number means higher priority task.
  */
+
 #define TASK_BLE_PRIORITY           (configMAX_PRIORITIES - 1)
 #define TASK_BATTERY_PRIORITY       (configMAX_PRIORITIES - 2)
 #define TASK_STATUS_LED_PRIORITY    (configMAX_PRIORITIES - 3)
+#define TASK_LEDS_PRIORITY    (configMAX_PRIORITIES - 4)
+#define TASK_BUZZER_PRIORITY  (configMAX_PRIORITIES - 4)
+#define TASK_MOTOR_PRIORITY   (configMAX_PRIORITIES - 4)
 
 /* Task names used in this application */
 #define TASK_BLE_NAME               ("BLE Task")
@@ -81,9 +56,69 @@
 #define TASK_LED_STACK_SIZE         (configMINIMAL_STACK_SIZE)
 
 /* Queue lengths of message queues used in this application  */
-#define BLE_QUEUE_LENGTH            (10u)
-#define STATUS_LED_QUEUE_LENGTH     (1u)
+#define BLE_QUEUE_LENGTH            (10)//u
+#define STATUS_LED_QUEUE_LENGTH     (1)//u
+#define MOTOR_QUEUE_LENGTH			(1)//u
+#define BUZZER_QUEUE_LENGTH			(1)//u
 
+/*******************************************************************************
+ * Function Name: Initial Hardware Test
+ ********************************************************************************
+ * Summary:
+ *  This function will turn both wheels on at half speed, turn all RGB on, and turn buzzer on
+ *
+ *******************************************************************************/
+void inital_hardware_test() {
+	//cy_rslt_t rslt;
+
+	//rslt = cyhal_pwm_set_duty_cycle(&pwm_obj_red, 0, 1000);
+	//rslt = cyhal_pwm_start(&pwm_obj_blue);
+	//rslt = cyhal_pwm_set_duty_cycle(&pwm_obj_blue, 100, 1000);
+	//rslt = cyhal_pwm_start(&pwm_obj_blue);
+	cyhal_gpio_toggle(PIN_LED_RED);
+	cyhal_gpio_toggle(PIN_LED_GREEN);
+	cyhal_gpio_toggle(PIN_LED_BLUE);
+
+	//Flick LEDs on and off one by one
+	for (int i = 0; i < 5; i++) {
+		cyhal_gpio_write(PIN_LED_RED, CYBSP_LED_STATE_ON);
+		vTaskDelay(1000);
+
+		cyhal_gpio_write(PIN_LED_RED, CYBSP_LED_STATE_OFF);
+		cyhal_gpio_write(PIN_LED_GREEN, CYBSP_LED_STATE_ON);
+		vTaskDelay(1000);
+
+		cyhal_gpio_write(PIN_LED_GREEN, CYBSP_LED_STATE_OFF);
+		cyhal_gpio_write(PIN_LED_BLUE, CYBSP_LED_STATE_ON);
+		vTaskDelay(1000);
+
+		cyhal_gpio_write(PIN_LED_BLUE, CYBSP_LED_STATE_OFF);
+	}
+
+	cyhal_gpio_write(PIN_BUZZER, 0U);
+	cyhal_pwm_set_duty_cycle(&pwm_obj_buzzer, 50, 2000);
+
+	//Turn buzzer on and off for 5 seconds
+	for (int i = 0; i < 3; i++) {
+		cyhal_gpio_write(PIN_BUZZER, CYBSP_LED_STATE_OFF);
+		vTaskDelay(1000);
+	}
+
+	//Make motors go forward at 50% speed
+	cyhal_gpio_write(MOTOR_OEn, MOTOR_STATE_ON);
+	cyhal_gpio_write(MOTOR1_INB, MOTOR_STATE_ON);
+	cyhal_gpio_write(MOTOR2_INB, MOTOR_STATE_ON);
+
+	cyhal_pwm_set_duty_cycle(&pwm_obj_motor1, 50, 1000);
+	cyhal_pwm_set_duty_cycle(&pwm_obj_motor2, 50, 1000);
+	vTaskDelay(1000);
+
+	//Turn motors back off
+	cyhal_gpio_write(MOTOR_OEn, MOTOR_STATE_OFF);
+	cyhal_gpio_write(MOTOR1_INA, MOTOR_STATE_OFF);
+	cyhal_gpio_write(MOTOR1_INB, MOTOR_STATE_OFF);
+
+}
 
 /*******************************************************************************
  * Function Name: main
@@ -99,51 +134,6 @@
 int main(void) {
 	cy_rslt_t result = CY_RSLT_SUCCESS;
 	BaseType_t rtos_api_result = pdPASS;
-
-	/////////////////////////////////////// Motor interface config //////////////////////////////////////////////////
-
-	cyhal_pwm_t pwm_obj_motor1;
-	cyhal_pwm_t pwm_obj_motor2;
-
-	/* Initialize Motors - each has one GPIO and one PWM */
-	/* MOTOR 1 */
-	/* IN1A (GPIO) + IN1B (PWM) */
-	cyhal_gpio_init(
-			MOTOR1_INA,                // Pin
-			CYHAL_GPIO_DIR_OUTPUT,      // Direction
-			CYHAL_GPIO_DRIVE_STRONG,    // Drive Mode
-			false);				        // InitialValue
-	cyhal_pwm_init(
-			&pwm_obj_motor1,				// PWM Object
-			MOTOR1_INB,                // Pin
-			NULL);						// Clock
-
-	/* MOTOR 2 */
-	/* IN1A (GPIO) + IN1B (PWM) */
-	cyhal_gpio_init(
-			MOTOR2_INA,                // Pin
-			CYHAL_GPIO_DIR_OUTPUT,      // Direction
-			CYHAL_GPIO_DRIVE_STRONG,    // Drive Mode
-			false);				        // InitialValue
-
-	cyhal_pwm_init(
-			&pwm_obj_motor2,				// PWM Object
-			MOTOR2_INB,                // Pin
-			NULL);
-
-	/* MOTOR OE Enable */
-	cyhal_gpio_init(
-			MOTOR_OEn,                // Pin
-			CYHAL_GPIO_DIR_OUTPUT,      // Direction
-			CYHAL_GPIO_DRIVE_STRONG,    // Drive Mode
-			true);
-
-	/* Driver config. */
-
-
-
-	/////////////////////////////////////// Motor interface config //////////////////////////////////////////////////
-
 
 	/* Initialize the device and board peripherals */
 	result = cybsp_init();
@@ -169,6 +159,7 @@ int main(void) {
 
 	/* Create a task to do thread-safe debug message printing */
 	task_debug_init();
+	leds_init();
 
 	/* Create the queues. See the respective data-types for details of queue
 	 * contents
@@ -177,27 +168,37 @@ int main(void) {
 			sizeof(ble_command_data_t));
 	status_led_data_q = xQueueCreate(STATUS_LED_QUEUE_LENGTH,
 			sizeof(status_led_data_t));
-
-	ece453_led_data_q = xQueueCreate(1, sizeof(ece453_led_data_t));
+	bb8_motor_data_q = xQueueCreate(MOTOR_QUEUE_LENGTH,
+			sizeof(bb8_motor_data_t));
+	buzzer_data_q = xQueueCreate(BUZZER_QUEUE_LENGTH, sizeof(buzzer_data_t));
+	ece453_led_data_q = xQueueCreate(STATUS_LED_QUEUE_LENGTH,
+			sizeof(ece453_led_data_t));
 
 	/* Create the user tasks. See the respective Task definition for more
 	 * details of these tasks */
-	rtos_api_result |= xTaskCreate(task_ble, TASK_BLE_NAME,
-	TASK_BLE_STACK_SIZE, NULL,
-	TASK_BLE_PRIORITY, NULL);
+
 	rtos_api_result |= xTaskCreate(task_status_led, TASK_STATUS_LED_NAME,
 	TASK_STATUS_LED_STACK_SIZE, NULL,
 	TASK_STATUS_LED_PRIORITY, NULL);
+
 	rtos_api_result |= xTaskCreate(task_battery, TASK_BATTERY_NAME,
 	TASK_BATTERY_STACK_SIZE, NULL,
 	TASK_BATTERY_PRIORITY, NULL);
 
-	rtos_api_result |= xTaskCreate(task_ece453_led, "ECE453 LED TASK", 256,
-	NULL, 1,
-	NULL);
+	rtos_api_result |= xTaskCreate(task_ble, TASK_BLE_NAME,
+	TASK_BLE_STACK_SIZE, NULL,
+	TASK_BLE_PRIORITY, NULL);
 
-	rtos_api_result |= xTaskCreate(bb8_motor_task, "BB8 MOTOR TASK", 256,
-	NULL, 1,
+//	rtos_api_result |= xTaskCreate(task_buzzer, "BUZZER TASK", 256,
+//	NULL, TASK_BUZZER_PRIORITY,
+//	NULL);
+//
+//	rtos_api_result |= xTaskCreate(task_ece453_led, "ECE453 LED TASK", 256,
+//	NULL, TASK_LEDS_PRIORITY,
+//	NULL);
+
+	rtos_api_result |= xTaskCreate(motor_task, "MOTOR TASK", 256,
+	NULL, TASK_MOTOR_PRIORITY,
 	NULL);
 
 	if (pdPASS == rtos_api_result) {
@@ -213,6 +214,10 @@ int main(void) {
 	/* Halt the CPU if failed to create task or failed to start scheduler */
 	CY_ASSERT(0u);
 
+	/* Initial Hardware Test */
+	//inital_hardware_test();
+
+	/*So we can keep spinning while the tasks do their thing*/
 	for (;;) {
 	}
 }

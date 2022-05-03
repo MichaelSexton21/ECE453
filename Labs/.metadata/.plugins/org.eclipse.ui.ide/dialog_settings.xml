@@ -51,6 +51,10 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\ECE_STUDENT\Documents\BB8-copy_tasks_switching"/>
+			<item value="C:\Users\ECE_STUDENT\Documents\BB8-temp_copy_old"/>
+			<item value="C:\Users\ECE_STUDENT\Documents\ECE453\LVHB_SDK_SW"/>
+			<item value="C:\Users\ECE_STUDENT\Documents\ECE453\LVHB_SDK_SW\KDS_Examples\LVHB_K64F_34933EP-EVB_Brush"/>
 			<item value="C:\Users\ECE_STUDENT\Documents\ECE453\Labs"/>
 			<item value="C:\Users\ECE_STUDENT\Documents\ECE453\Labs\mtb-example-anycloud-ble-capsense-buttons-slider-master"/>
 			<item value="C:\Users\ECE_STUDENT\Documents\ECE453\BB8"/>

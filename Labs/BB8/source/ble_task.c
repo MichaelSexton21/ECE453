@@ -42,6 +42,7 @@
 /*******************************************************************************
  * Include header file
  ******************************************************************************/
+#include <led_task.h>
 #include "ble_task.h"
 #include "cyhal.h"
 #include "cybsp.h"
@@ -50,7 +51,7 @@
 #include "timers.h"
 #include "status_led_task.h"
 #include "uart_debug.h"
-#include "ece453_led_task.h"
+#include "buzzer_task.h"
 
 
 /******************************************************************************
@@ -89,6 +90,12 @@ QueueHandle_t ble_command_data_q;
 bool bleInitTimeout = false;
 
 static cy_stc_ble_gatt_write_param_t *write_req_param;
+
+//int FORWARD = 0;
+//int REVERSE = 0;
+//int LEFT = 0;
+//int RIGHT = 0;
+//int CONNECTED = 0;
 
 
 /*******************************************************************************
@@ -483,7 +490,7 @@ static void stack_event_handler(uint32_t event, void* event_param)
         case CY_BLE_EVT_GAP_DEVICE_CONNECTED:
         {
             task_print_info("GAP device connected", 0u);
-
+//            CONNECTED = 1;
             /* sets the security keys that are to be exchanged with a peer
              * device during key exchange stage of the authentication procedure
              */
@@ -515,6 +522,7 @@ static void stack_event_handler(uint32_t event, void* event_param)
         case CY_BLE_EVT_GAP_DEVICE_DISCONNECTED:
         {
             task_print_info("GAP device disconnected");
+//            CONNECTED = 1;
             status_led_data_t led_data = { LED_TURN_OFF };
             rtos_api_result = xQueueOverwrite(status_led_data_q, &led_data);
             /* Check if the operation has been successful */
@@ -657,7 +665,7 @@ static void stack_event_handler(uint32_t event, void* event_param)
 				 /* Check if the operation has been successful */
 				 if(rtos_api_result != pdTRUE)
 				 {
-					 task_print_error("Sending data to ece453_led_data_q 0x%X",
+					 task_print_error("Sending data to led_data_q 0x%X",
 									 rtos_api_result);
 				 }
 
@@ -683,37 +691,160 @@ static void stack_event_handler(uint32_t event, void* event_param)
 				 /* Check if the operation has been successful */
 				 if(rtos_api_result != pdTRUE)
 				 {
-					 task_print_error("Sending data to ece453_led_data_q 0x%X",
+					 task_print_error("Sending data to led_data_q 0x%X",
 									 rtos_api_result);
 				 }
 
 			}
 			else if (CY_BLE_LEDS_BLUE_CHAR_HANDLE == write_req_param->handleValPair.attrHandle)
-						{
-							task_print_info("GATT Write BLUE: 0x%x", write_req_param->handleValPair.value.val[0]);
+			{
+				task_print_info("GATT Write BLUE: 0x%x", write_req_param->handleValPair.value.val[0]);
 
-			                 /* ADD CODE to send the PWM value for the BLUE LED to the ECE453 task.
-			                  * Use ece453_led_task.h to determine which FreeRTOS queue to send the data to
-			                  * and what the format of the data being sent is.*/
-							 uint8_t pwm = 0;
-							 if(write_req_param->handleValPair.value.val[0] > 100)
-							 {
-								 pwm = 100;
-							 } else
-							 {
-								 pwm = write_req_param->handleValPair.value.val[0];
-							 }
+				 /* ADD CODE to send the PWM value for the BLUE LED to the ECE453 task.
+				  * Use ece453_led_task.h to determine which FreeRTOS queue to send the data to
+				  * and what the format of the data being sent is.*/
+				 uint8_t pwm = 0;
+				 if(write_req_param->handleValPair.value.val[0] > 100)
+				 {
+					 pwm = 100;
+				 } else
+				 {
+					 pwm = write_req_param->handleValPair.value.val[0];
+				 }
 
-							 ece453_led_data_t led_data = { ECE453_LED_BLUE, pwm };
-							 rtos_api_result = xQueueOverwrite(ece453_led_data_q, &led_data);
-							 /* Check if the operation has been successful */
-							 if(rtos_api_result != pdTRUE)
-							 {
-								 task_print_error("Sending data to ece453_led_data_q 0x%X",
-												 rtos_api_result);
-							 }
+				 ece453_led_data_t led_data = { ECE453_LED_BLUE, pwm };
+				 rtos_api_result = xQueueOverwrite(ece453_led_data_q, &led_data);
+				 /* Check if the operation has been successful */
+				 if(rtos_api_result != pdTRUE)
+				 {
+					 task_print_error("Sending data to led_data_q 0x%X",
+									 rtos_api_result);
+				 }
 
-						}
+			}
+			else if (CY_BLE_LEDS_FORWARD_CHAR_HANDLE == write_req_param->handleValPair.attrHandle)
+			{
+				task_print_info("GATT Write FORWARD: 0x%x", write_req_param->handleValPair.value.val[0]);
+//				FORWARD = write_req_param->handleValPair.value.val[0];
+
+//				forward_recieved = write_req_param->handleValPair.value.val[0];
+				bb8_motor_data_t motor_data = { FORWARD };
+
+				 rtos_api_result = xQueueOverwrite(bb8_motor_data_q, &motor_data);
+				 /* Check if the operation has been successful */
+				 if(rtos_api_result != pdTRUE)
+				 {
+					 task_print_error("Sending data to led_data_q 0x%X",
+									 rtos_api_result);
+				 }
+
+			}
+			else if (CY_BLE_LEDS_REVERSE_CHAR_HANDLE == write_req_param->handleValPair.attrHandle)
+			{
+				task_print_info("GATT Write REVERSE: 0x%x", write_req_param->handleValPair.value.val[0]);
+//				REVERSE = write_req_param->handleValPair.value.val[0];
+
+//				uint8_t reverse_recieved = 0;
+//				reverse_recieved = write_req_param->handleValPair.value.val[0];
+				bb8_motor_data_t motor_data = { REVERSE };
+
+				 rtos_api_result = xQueueOverwrite(bb8_motor_data_q, &motor_data);
+				 /* Check if the operation has been successful */
+				 if(rtos_api_result != pdTRUE)
+				 {
+					 task_print_error("Sending data to led_data_q 0x%X",
+									 rtos_api_result);
+				 }
+
+			}
+			else if (CY_BLE_LEDS_LEFT_CHAR_HANDLE == write_req_param->handleValPair.attrHandle)
+			{
+				task_print_info("GATT Write LEFT: 0x%x", write_req_param->handleValPair.value.val[0]);
+//				LEFT = write_req_param->handleValPair.value.val[0];
+
+//				uint8_t left_recieved = 0;
+//				left_recieved = write_req_param->handleValPair.value.val[0];
+				bb8_motor_data_t motor_data = { LEFT };
+
+				 rtos_api_result = xQueueOverwrite(bb8_motor_data_q, &motor_data);
+				 /* Check if the operation has been successful */
+				 if(rtos_api_result != pdTRUE)
+				 {
+					 task_print_error("Sending data to led_data_q 0x%X",
+									 rtos_api_result);
+				 }
+
+			}
+			else if (CY_BLE_LEDS_RIGHT_CHAR_HANDLE == write_req_param->handleValPair.attrHandle)
+			{
+				task_print_info("GATT Write RIGHT: 0x%x", write_req_param->handleValPair.value.val[0]);
+//				RIGHT = write_req_param->handleValPair.value.val[0];
+
+//				uint8_t right_recieved = 0;
+//				right_recieved = write_req_param->handleValPair.value.val[0];
+				bb8_motor_data_t motor_data = { RIGHT };
+
+				 rtos_api_result = xQueueOverwrite(bb8_motor_data_q, &motor_data);
+				 /* Check if the operation has been successful */
+				 if(rtos_api_result != pdTRUE)
+				 {
+					 task_print_error("Sending data to led_data_q 0x%X",
+									 rtos_api_result);
+				 }
+
+			}else if (CY_BLE_LEDS_MOTOR_ENCODER1_CHAR_HANDLE == write_req_param->handleValPair.attrHandle)
+			{
+				task_print_info("GATT Write MOTOR_ENCODER1: 0x%x", write_req_param->handleValPair.value.val[0]);
+//				RIGHT = write_req_param->handleValPair.value.val[0];
+
+				uint8_t motor_encoder1_recieved = 0;
+				motor_encoder1_recieved = write_req_param->handleValPair.value.val[0];
+				bb8_motor_data_t motor_data = { ENCODER1, motor_encoder1_recieved };
+
+				 rtos_api_result = xQueueOverwrite(bb8_motor_data_q, &motor_data);
+				 /* Check if the operation has been successful */
+				 if(rtos_api_result != pdTRUE)
+				 {
+					 task_print_error("Sending data to led_data_q 0x%X",
+									 rtos_api_result);
+				 }
+
+			}else if (CY_BLE_LEDS_MOTOR_ENCODER2_CHAR_HANDLE == write_req_param->handleValPair.attrHandle)
+			{
+				task_print_info("GATT Write MOTOR_ENCODER2: 0x%x", write_req_param->handleValPair.value.val[0]);
+//				RIGHT = write_req_param->handleValPair.value.val[0];
+
+				uint8_t motor_encoder2_recieved = 0;
+				motor_encoder2_recieved = write_req_param->handleValPair.value.val[0];
+				bb8_motor_data_t motor_data = { ENCODER2, motor_encoder2_recieved };
+
+				 rtos_api_result = xQueueOverwrite(bb8_motor_data_q, &motor_data);
+				 /* Check if the operation has been successful */
+				 if(rtos_api_result != pdTRUE)
+				 {
+					 task_print_error("Sending data to led_data_q 0x%X",
+									 rtos_api_result);
+				 }
+
+			}
+			else if( CY_BLE_LEDS_BUZZER_CHAR_HANDLE == write_req_param->handleValPair.attrHandle)
+			{
+				 task_print_info("GATT Write Buzzer: 0x%x", write_req_param->handleValPair.value.val[0]);
+
+				 uint8_t buzzer_recieved = 0;
+				buzzer_recieved = write_req_param->handleValPair.value.val[0];
+				buzzer_data_t buzzer_data = { BUZZER, buzzer_recieved };
+
+				 rtos_api_result = xQueueOverwrite(buzzer_data_q, &buzzer_data);
+				 /* Check if the operation has been successful */
+				 if(rtos_api_result != pdTRUE)
+				 {
+					 task_print_error("Sending data to led_data_q 0x%X",
+									 rtos_api_result);
+				 }
+
+			}
+
 			break;
 		}
 

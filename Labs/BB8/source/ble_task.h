@@ -51,6 +51,8 @@
 #include "FreeRTOS.h"
 #include "task.h"
 #include "queue.h"
+#include "buzzer_task.h"
+#include "motor_task.h"
 
 
 /*******************************************************************************
@@ -78,7 +80,11 @@ typedef struct
 /* Handle for the queue that contains BLE commands and data */
 extern QueueHandle_t ble_command_data_q;
 
-
+//extern int FORWARD;
+//extern int REVERSE;
+//extern int LEFT;
+//extern int RIGHT;
+//extern int CONNECTED;
 /*******************************************************************************
  * Function prototype
  ******************************************************************************/

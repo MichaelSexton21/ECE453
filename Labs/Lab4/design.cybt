@@ -370,14 +370,14 @@
                             <ServiceProperties>
                                 <Property id="DisplayName" value="LEDS"/>
                                 <Property id="EntityID" value="{9322e4f5-994e-494f-9f5e-9e2cc593177a}"/>
-                                <Property id="UUID" value="55F4EC0E-D13D-4EC3-B088-29B6874864CD"/>
+                                <Property id="UUID" value="55F4EC0E-D13D-4EC3-B088-29B6874864C0"/>
                                 <Property id="ServiceDeclaration" value="Primary"/>
                             </ServiceProperties>
                             <Characteristics>
                                 <Characteristic type="org.bluetooth.characteristic.custom">
                                     <CharacteristicProperties>
                                         <Property id="DisplayName" value="RED"/>
-                                        <Property id="UUID" value="82CF8AB0-ED84-4591-8868-DB2875E801D9"/>
+                                        <Property id="UUID" value="55F4EC0E-D13D-4EC3-B088-29B6874864C1"/>
                                     </CharacteristicProperties>
                                     <Fields>
                                         <Field>
@@ -485,7 +485,7 @@
                                 <Characteristic type="org.bluetooth.characteristic.custom">
                                     <CharacteristicProperties>
                                         <Property id="DisplayName" value="GREEN"/>
-                                        <Property id="UUID" value="145FF5C4-A4BF-45BA-9A23-19A33592FFB3"/>
+                                        <Property id="UUID" value="55F4EC0E-D13D-4EC3-B088-29B6874864C2"/>
                                     </CharacteristicProperties>
                                     <Fields>
                                         <Field>

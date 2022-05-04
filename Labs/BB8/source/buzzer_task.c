@@ -13,8 +13,6 @@
 QueueHandle_t buzzer_data_q;
 
 void task_buzzer(void *param) {
-
-#if 1
 	task_print_info("BUZZER_TASK: BEGAN TASK");
 	vTaskDelay(1000);
 	cy_rslt_t rslt;
@@ -45,12 +43,6 @@ void task_buzzer(void *param) {
 		}
 
 	}
-#else
-	for (;;) {
-		task_print_info("BUZZER_TASK: BEGAN LOOP");
-		vTaskDelay(1000);
-	}
-#endif
 
 }
 

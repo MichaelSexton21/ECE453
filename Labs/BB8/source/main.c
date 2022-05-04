@@ -18,7 +18,6 @@
 #include "task.h"
 #include "queue.h"
 #include "ble_task.h"
-#include "battery_task.h"
 #include "status_led_task.h"
 #include "uart_debug.h"
 
@@ -181,21 +180,18 @@ int main(void) {
 	TASK_STATUS_LED_STACK_SIZE, NULL,
 	TASK_STATUS_LED_PRIORITY, NULL);
 
-	rtos_api_result |= xTaskCreate(task_battery, TASK_BATTERY_NAME,
-	TASK_BATTERY_STACK_SIZE, NULL,
-	TASK_BATTERY_PRIORITY, NULL);
 
 	rtos_api_result |= xTaskCreate(task_ble, TASK_BLE_NAME,
 	TASK_BLE_STACK_SIZE, NULL,
 	TASK_BLE_PRIORITY, NULL);
 
-//	rtos_api_result |= xTaskCreate(task_buzzer, "BUZZER TASK", 256,
-//	NULL, TASK_BUZZER_PRIORITY,
-//	NULL);
-//
-//	rtos_api_result |= xTaskCreate(task_ece453_led, "ECE453 LED TASK", 256,
-//	NULL, TASK_LEDS_PRIORITY,
-//	NULL);
+	rtos_api_result |= xTaskCreate(task_buzzer, "BUZZER TASK", 256,
+	NULL, TASK_BUZZER_PRIORITY,
+	NULL);
+
+	rtos_api_result |= xTaskCreate(task_ece453_led, "ECE453 LED TASK", 256,
+	NULL, TASK_LEDS_PRIORITY,
+	NULL);
 
 	rtos_api_result |= xTaskCreate(motor_task, "MOTOR TASK", 256,
 	NULL, TASK_MOTOR_PRIORITY,
